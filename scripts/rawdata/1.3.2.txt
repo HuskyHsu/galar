@@ -72,7 +72,7 @@ TRs:
 - [TR85] Work Up
 Armor Tutors:
 - Grassy Glide
-Evolves into Ivysaur-0 @ 16 (LevelUp) [0]
+Evolves into Ivysaur-0 @ lv16 (LevelUp) [0]
 
 ======
 002 - Ivysaur (Stage: 2)
@@ -141,7 +141,7 @@ TRs:
 - [TR85] Work Up
 Armor Tutors:
 - Grassy Glide
-Evolves into Venusaur-0 @ 32 (LevelUp) [0]
+Evolves into Venusaur-0 @ lv32 (LevelUp) [0]
 
 ======
 003 - Venusaur (Stage: 3)
@@ -307,7 +307,7 @@ TRs:
 - [TR85] Work Up
 Armor Tutors:
 None!
-Evolves into Charmeleon-0 @ 16 (LevelUp) [0]
+Evolves into Charmeleon-0 @ lv16 (LevelUp) [0]
 
 ======
 005 - Charmeleon (Stage: 2)
@@ -385,7 +385,7 @@ TRs:
 - [TR85] Work Up
 Armor Tutors:
 None!
-Evolves into Charizard-0 @ 36 (LevelUp) [0]
+Evolves into Charizard-0 @ lv36 (LevelUp) [0]
 
 ======
 006 - Charizard (Stage: 3)
@@ -570,7 +570,7 @@ TRs:
 - [TR85] Work Up
 Armor Tutors:
 - Flip Turn
-Evolves into Wartortle-0 @ 16 (LevelUp) [0]
+Evolves into Wartortle-0 @ lv16 (LevelUp) [0]
 
 ======
 008 - Wartortle (Stage: 2)
@@ -646,7 +646,7 @@ TRs:
 - [TR85] Work Up
 Armor Tutors:
 - Flip Turn
-Evolves into Blastoise-0 @ 36 (LevelUp) [0]
+Evolves into Blastoise-0 @ lv36 (LevelUp) [0]
 
 ======
 009 - Blastoise (Stage: 3)
@@ -764,7 +764,7 @@ TRs:
 None!
 Armor Tutors:
 None!
-Evolves into Metapod-0 @ 7 (LevelUp) [0]
+Evolves into Metapod-0 @ lv7 (LevelUp) [0]
 
 ======
 011 - Metapod (Stage: 2)
@@ -790,7 +790,7 @@ TRs:
 - [TR46] Iron Defense
 Armor Tutors:
 None!
-Evolves into Butterfree-0 @ 10 (LevelUp) [0]
+Evolves into Butterfree-0 @ lv10 (LevelUp) [0]
 
 ======
 012 - Butterfree (Stage: 3)
@@ -952,7 +952,7 @@ TRs:
 - [TR90] Play Rough
 Armor Tutors:
 - Rising Voltage
-Evolves into Raichu-0 @ 0 (UseItem) [83]
+Evolves into Raichu-0 @ lv0 (UseItem) [83]
 
 ======
 901 - Pikachu 1 (Stage: 2)
@@ -1556,7 +1556,6 @@ TRs:
 Armor Tutors:
 - Rising Voltage
 
-
 ======
 909 - Pikachu 9 (Stage: 2)
 ======
@@ -1920,7 +1919,7 @@ TRs:
 Armor Tutors:
 - Scorching Sands
 - Steel Roller
-Evolves into Sandslash-0 @ 22 (LevelUp) [0]
+Evolves into Sandslash-0 @ lv22 (LevelUp) [0]
 
 ======
 911 - Sandshrew 1 (Stage: 1)
@@ -2009,7 +2008,7 @@ TRs:
 Armor Tutors:
 - Triple Axel
 - Steel Roller
-Evolves into Sandslash-1 @ 0 (UseItem) [849]
+Evolves into Sandslash-1 @ lv0 (UseItem) [849]
 
 ======
 028 - Sandslash (Stage: 2)
@@ -2262,7 +2261,7 @@ TRs:
 - [TR91] Venom Drench
 Armor Tutors:
 None!
-Evolves into Nidorina-0 @ 16 (LevelUp) [0]
+Evolves into Nidorina-0 @ lv16 (LevelUp) [0]
 
 ======
 030 - Nidorina (Stage: 2)
@@ -2329,7 +2328,7 @@ TRs:
 - [TR91] Venom Drench
 Armor Tutors:
 None!
-Evolves into Nidoqueen-0 @ 0 (UseItem) [81]
+Evolves into Nidoqueen-0 @ lv0 (UseItem) [81]
 
 ======
 031 - Nidoqueen (Stage: 3)
@@ -2514,7 +2513,7 @@ TRs:
 - [TR91] Venom Drench
 Armor Tutors:
 None!
-Evolves into Nidorino-0 @ 16 (LevelUp) [0]
+Evolves into Nidorino-0 @ lv16 (LevelUp) [0]
 
 ======
 033 - Nidorino (Stage: 2)
@@ -2582,7 +2581,7 @@ TRs:
 - [TR91] Venom Drench
 Armor Tutors:
 None!
-Evolves into Nidoking-0 @ 0 (UseItem) [81]
+Evolves into Nidoking-0 @ lv0 (UseItem) [81]
 
 ======
 034 - Nidoking (Stage: 3)
@@ -2805,7 +2804,7 @@ Armor Tutors:
 - Dual Wingbeat
 - Meteor Beam
 - Misty Explosion
-Evolves into Clefable-0 @ 0 (UseItem) [81]
+Evolves into Clefable-0 @ lv0 (UseItem) [81]
 
 ======
 036 - Clefable (Stage: 3)
@@ -3005,7 +3004,7 @@ TRs:
 - [TR81] Foul Play
 Armor Tutors:
 - Burning Jealousy
-Evolves into Ninetales-0 @ 0 (UseItem) [82]
+Evolves into Ninetales-0 @ lv0 (UseItem) [82]
 
 ======
 913 - Vulpix 1 (Stage: 1)
@@ -3085,7 +3084,7 @@ TRs:
 - [TR81] Foul Play
 Armor Tutors:
 None!
-Evolves into Ninetales-1 @ 0 (UseItem) [849]
+Evolves into Ninetales-1 @ lv0 (UseItem) [849]
 
 ======
 038 - Ninetales (Stage: 2)
@@ -3359,7 +3358,7 @@ TRs:
 Armor Tutors:
 - Steel Roller
 - Misty Explosion
-Evolves into Wigglytuff-0 @ 0 (UseItem) [81]
+Evolves into Wigglytuff-0 @ lv0 (UseItem) [81]
 
 ======
 040 - Wigglytuff (Stage: 3)
@@ -3542,7 +3541,7 @@ TRs:
 - [TR91] Venom Drench
 Armor Tutors:
 - Dual Wingbeat
-Evolves into Golbat-0 @ 22 (LevelUp) [0]
+Evolves into Golbat-0 @ lv22 (LevelUp) [0]
 
 ======
 042 - Golbat (Stage: 2)
@@ -3615,7 +3614,7 @@ TRs:
 - [TR91] Venom Drench
 Armor Tutors:
 - Dual Wingbeat
-Evolves into Crobat-0 @ 0 (LevelUpFriendship) [0]
+Evolves into Crobat-0 @ lv0 (LevelUpFriendship) [0]
 
 ======
 043 - Oddish (Stage: 1)
@@ -3686,7 +3685,7 @@ TRs:
 - [TR92] Dazzling Gleam
 Armor Tutors:
 - Grassy Glide
-Evolves into Gloom-0 @ 21 (LevelUp) [0]
+Evolves into Gloom-0 @ lv21 (LevelUp) [0]
 
 ======
 044 - Gloom (Stage: 2)
@@ -3748,8 +3747,8 @@ TRs:
 - [TR92] Dazzling Gleam
 Armor Tutors:
 - Grassy Glide
-Evolves into Vileplume-0 @ 0 (UseItem) [85]
-Evolves into Bellossom-0 @ 0 (UseItem) [80]
+Evolves into Vileplume-0 @ lv0 (UseItem) [85]
+Evolves into Bellossom-0 @ lv0 (UseItem) [80]
 
 ======
 045 - Vileplume (Stage: 3)
@@ -3894,7 +3893,7 @@ TRs:
 - [TR85] Work Up
 Armor Tutors:
 - Scorching Sands
-Evolves into Dugtrio-0 @ 26 (LevelUp) [0]
+Evolves into Dugtrio-0 @ lv26 (LevelUp) [0]
 
 ======
 915 - Diglett 1 (Stage: 1)
@@ -3972,7 +3971,7 @@ TRs:
 - [TR85] Work Up
 Armor Tutors:
 - Scorching Sands
-Evolves into Dugtrio-1 @ 26 (LevelUp) [0]
+Evolves into Dugtrio-1 @ lv26 (LevelUp) [0]
 
 ======
 051 - Dugtrio (Stage: 2)
@@ -4214,7 +4213,7 @@ TRs:
 - [TR95] Throat Chop
 Armor Tutors:
 - Lash Out
-Evolves into Persian-0 @ 28 (LevelUp) [0]
+Evolves into Persian-0 @ lv28 (LevelUp) [0]
 
 ======
 917 - Meowth 1 (Stage: 1)
@@ -4298,7 +4297,7 @@ TRs:
 - [TR95] Throat Chop
 Armor Tutors:
 - Lash Out
-Evolves into Persian-1 @ 0 (LevelUpFriendship) [0]
+Evolves into Persian-1 @ lv0 (LevelUpFriendship) [0]
 
 ======
 918 - Meowth 2 (Stage: 1)
@@ -4382,7 +4381,7 @@ TRs:
 - [TR95] Throat Chop
 Armor Tutors:
 - Lash Out
-Evolves into Perrserker-0 @ 28 (LevelUp) [0]
+Evolves into Perrserker-0 @ lv28 (LevelUp) [0]
 
 ======
 053 - Persian (Stage: 2)
@@ -4640,7 +4639,7 @@ TRs:
 - [TR84] Scald
 Armor Tutors:
 None!
-Evolves into Golduck-0 @ 33 (LevelUp) [0]
+Evolves into Golduck-0 @ lv33 (LevelUp) [0]
 
 ======
 055 - Golduck (Stage: 2)
@@ -4805,7 +4804,7 @@ TRs:
 - [TR97] Psychic Fangs
 Armor Tutors:
 None!
-Evolves into Arcanine-0 @ 0 (UseItem) [82]
+Evolves into Arcanine-0 @ lv0 (UseItem) [82]
 
 ======
 059 - Arcanine (Stage: 2)
@@ -4959,7 +4958,7 @@ TRs:
 - [TR84] Scald
 Armor Tutors:
 None!
-Evolves into Poliwhirl-0 @ 25 (LevelUp) [0]
+Evolves into Poliwhirl-0 @ lv25 (LevelUp) [0]
 
 ======
 061 - Poliwhirl (Stage: 2)
@@ -5031,8 +5030,8 @@ TRs:
 - [TR84] Scald
 Armor Tutors:
 None!
-Evolves into Poliwrath-0 @ 0 (UseItem) [84]
-Evolves into Politoed-0 @ 0 (TradeHeldItem) [221]
+Evolves into Poliwrath-0 @ lv0 (UseItem) [84]
+Evolves into Politoed-0 @ lv0 (TradeHeldItem) [221]
 
 ======
 062 - Poliwrath (Stage: 3)
@@ -5204,7 +5203,7 @@ TRs:
 - [TR92] Dazzling Gleam
 Armor Tutors:
 None!
-Evolves into Kadabra-0 @ 16 (LevelUp) [0]
+Evolves into Kadabra-0 @ lv16 (LevelUp) [0]
 
 ======
 064 - Kadabra (Stage: 2)
@@ -5294,7 +5293,7 @@ TRs:
 - [TR92] Dazzling Gleam
 Armor Tutors:
 - Expanding Force
-Evolves into Alakazam-0 @ 0 (Trade) [0]
+Evolves into Alakazam-0 @ lv0 (Trade) [0]
 
 ======
 065 - Alakazam (Stage: 3)
@@ -5479,7 +5478,7 @@ TRs:
 - [TR85] Work Up
 Armor Tutors:
 - Coaching
-Evolves into Machoke-0 @ 28 (LevelUp) [0]
+Evolves into Machoke-0 @ lv28 (LevelUp) [0]
 
 ======
 067 - Machoke (Stage: 2)
@@ -5565,7 +5564,7 @@ TRs:
 - [TR85] Work Up
 Armor Tutors:
 - Coaching
-Evolves into Machamp-0 @ 0 (Trade) [0]
+Evolves into Machamp-0 @ lv0 (Trade) [0]
 
 ======
 068 - Machamp (Stage: 3)
@@ -5745,7 +5744,7 @@ TRs:
 - [TR92] Dazzling Gleam
 Armor Tutors:
 None!
-Evolves into Tentacruel-0 @ 30 (LevelUp) [0]
+Evolves into Tentacruel-0 @ lv30 (LevelUp) [0]
 
 ======
 073 - Tentacruel (Stage: 2)
@@ -5897,7 +5896,7 @@ TRs:
 - [TR94] High Horsepower
 Armor Tutors:
 None!
-Evolves into Rapidash-0 @ 40 (LevelUp) [0]
+Evolves into Rapidash-0 @ lv40 (LevelUp) [0]
 
 ======
 923 - Ponyta 1 (Stage: 1)
@@ -5968,7 +5967,7 @@ TRs:
 - [TR94] High Horsepower
 Armor Tutors:
 - Expanding Force
-Evolves into Rapidash-1 @ 40 (LevelUp) [0]
+Evolves into Rapidash-1 @ lv40 (LevelUp) [0]
 
 ======
 078 - Rapidash (Stage: 2)
@@ -6229,8 +6228,8 @@ TRs:
 - [TR98] Liquidation
 Armor Tutors:
 - Expanding Force
-Evolves into Slowbro-0 @ 37 (LevelUp) [0]
-Evolves into Slowking-0 @ 37 (TradeHeldItem) [221]
+Evolves into Slowbro-0 @ lv37 (LevelUp) [0]
+Evolves into Slowking-0 @ lv37 (TradeHeldItem) [221]
 
 ======
 925 - Slowpoke 1 (Stage: 1)
@@ -6327,8 +6326,8 @@ TRs:
 - [TR98] Liquidation
 Armor Tutors:
 - Expanding Force
-Evolves into Slowbro-2 @ 0 (UseItem) [1582]
-Evolves into Slowking-1 @ 0 (UseItem) [1592]
+Evolves into Slowbro-2 @ lv0 (UseItem) [1582]
+Evolves into Slowking-1 @ lv0 (UseItem) [1592]
 
 ======
 080 - Slowbro (Stage: 2)
@@ -6438,7 +6437,6 @@ TRs:
 - [TR99] Body Press
 Armor Tutors:
 - Expanding Force
-
 
 ======
 927 - Slowbro 2 (Stage: 2)
@@ -6614,7 +6612,7 @@ TRs:
 - [TR86] Wild Charge
 Armor Tutors:
 - Rising Voltage
-Evolves into Magneton-0 @ 30 (LevelUp) [0]
+Evolves into Magneton-0 @ lv30 (LevelUp) [0]
 
 ======
 082 - Magneton (Stage: 2)
@@ -6684,10 +6682,10 @@ TRs:
 - [TR86] Wild Charge
 Armor Tutors:
 - Rising Voltage
-Evolves into Magnezone-0 @ 0 (UseItem) [83]
+Evolves into Magnezone-0 @ lv0 (UseItem) [83]
 
 ======
-083 - Farfetch’d (Stage: 2)
+083 - Farfetch'd (Stage: 2)
 ======
 Galar Dex: #218
 Base Stats: 52.90.55.58.62.60 (BST: 377)
@@ -6776,7 +6774,7 @@ Armor Tutors:
 - Dual Wingbeat
 
 ======
-928 - Farfetch’d 1 (Stage: 2)
+928 - Farfetch'd 1 (Stage: 2)
 ======
 Galar Dex: #218
 Base Stats: 52.95.55.58.62.55 (BST: 377)
@@ -6852,7 +6850,7 @@ TRs:
 - [TR95] Throat Chop
 Armor Tutors:
 - Dual Wingbeat
-Evolves into Sirfetch’d-0 @ 0 (CriticalHitsInBattle) [3]
+Evolves into Sirfetch'd-0 @ lv0 (CriticalHitsInBattle) [3]
 
 ======
 090 - Shellder (Stage: 1)
@@ -6927,7 +6925,7 @@ TRs:
 - [TR98] Liquidation
 Armor Tutors:
 None!
-Evolves into Cloyster-0 @ 0 (UseItem) [84]
+Evolves into Cloyster-0 @ lv0 (UseItem) [84]
 
 ======
 091 - Cloyster (Stage: 2)
@@ -7098,7 +7096,7 @@ Armor Tutors:
 - Corrosive Gas
 - Skitter Smack
 - Poltergeist
-Evolves into Haunter-0 @ 25 (LevelUp) [0]
+Evolves into Haunter-0 @ lv25 (LevelUp) [0]
 
 ======
 093 - Haunter (Stage: 2)
@@ -7181,7 +7179,7 @@ Armor Tutors:
 - Corrosive Gas
 - Skitter Smack
 - Poltergeist
-Evolves into Gengar-0 @ 0 (Trade) [0]
+Evolves into Gengar-0 @ lv0 (Trade) [0]
 
 ======
 094 - Gengar (Stage: 3)
@@ -7366,7 +7364,7 @@ TRs:
 Armor Tutors:
 - Scorching Sands
 - Meteor Beam
-Evolves into Steelix-0 @ 0 (TradeHeldItem) [233]
+Evolves into Steelix-0 @ lv0 (TradeHeldItem) [233]
 
 ======
 098 - Krabby (Stage: 1)
@@ -7446,7 +7444,7 @@ TRs:
 - [TR98] Liquidation
 Armor Tutors:
 None!
-Evolves into Kingler-0 @ 28 (LevelUp) [0]
+Evolves into Kingler-0 @ lv28 (LevelUp) [0]
 
 ======
 099 - Kingler (Stage: 2)
@@ -7602,7 +7600,7 @@ TRs:
 - [TR77] Grass Knot
 Armor Tutors:
 - Grassy Glide
-Evolves into Exeggutor-0 @ 0 (UseItem) [85]
+Evolves into Exeggutor-0 @ lv0 (UseItem) [85]
 
 ======
 103 - Exeggutor (Stage: 2)
@@ -7864,7 +7862,7 @@ TRs:
 - [TR76] Stealth Rock
 Armor Tutors:
 - Scorching Sands
-Evolves into Marowak-0 @ 28 (LevelUp) [0]
+Evolves into Marowak-0 @ lv28 (LevelUp) [0]
 
 ======
 105 - Marowak (Stage: 2)
@@ -8321,7 +8319,7 @@ TRs:
 Armor Tutors:
 - Terrain Pulse
 - Steel Roller
-Evolves into Lickilicky-0 @ 0 (LevelUpKnowMove) [205]
+Evolves into Lickilicky-0 @ lv0 (LevelUpKnowMove) [205]
 
 ======
 109 - Koffing (Stage: 1)
@@ -8400,7 +8398,7 @@ TRs:
 - [TR91] Venom Drench
 Armor Tutors:
 - Corrosive Gas
-Evolves into Weezing-1 @ 35 (LevelUp) [0]
+Evolves into Weezing-1 @ lv35 (LevelUp) [0]
 
 ======
 110 - Weezing (Stage: 2)
@@ -8657,7 +8655,7 @@ TRs:
 - [TR94] High Horsepower
 Armor Tutors:
 - Scorching Sands
-Evolves into Rhydon-0 @ 42 (LevelUp) [0]
+Evolves into Rhydon-0 @ lv42 (LevelUp) [0]
 
 ======
 112 - Rhydon (Stage: 2)
@@ -8770,7 +8768,7 @@ TRs:
 Armor Tutors:
 - Scorching Sands
 - Meteor Beam
-Evolves into Rhyperior-0 @ 0 (TradeHeldItem) [321]
+Evolves into Rhyperior-0 @ lv0 (TradeHeldItem) [321]
 
 ======
 113 - Chansey (Stage: 2)
@@ -8878,7 +8876,7 @@ TRs:
 - [TR92] Dazzling Gleam
 Armor Tutors:
 None!
-Evolves into Blissey-0 @ 0 (LevelUpFriendship) [0]
+Evolves into Blissey-0 @ lv0 (LevelUpFriendship) [0]
 
 ======
 114 - Tangela (Stage: 1)
@@ -8951,7 +8949,7 @@ TRs:
 - [TR77] Grass Knot
 Armor Tutors:
 - Grassy Glide
-Evolves into Tangrowth-0 @ 0 (LevelUpKnowMove) [246]
+Evolves into Tangrowth-0 @ lv0 (LevelUpKnowMove) [246]
 
 ======
 115 - Kangaskhan (Stage: 2)
@@ -9129,7 +9127,7 @@ TRs:
 Armor Tutors:
 - Flip Turn
 - Scale Shot
-Evolves into Seadra-0 @ 32 (LevelUp) [0]
+Evolves into Seadra-0 @ lv32 (LevelUp) [0]
 
 ======
 117 - Seadra (Stage: 2)
@@ -9200,7 +9198,7 @@ TRs:
 Armor Tutors:
 - Flip Turn
 - Scale Shot
-Evolves into Kingdra-0 @ 0 (TradeHeldItem) [235]
+Evolves into Kingdra-0 @ lv0 (TradeHeldItem) [235]
 
 ======
 118 - Goldeen (Stage: 1)
@@ -9276,7 +9274,7 @@ TRs:
 Armor Tutors:
 - Flip Turn
 - Scale Shot
-Evolves into Seaking-0 @ 33 (LevelUp) [0]
+Evolves into Seaking-0 @ lv33 (LevelUp) [0]
 
 ======
 119 - Seaking (Stage: 2)
@@ -9420,7 +9418,7 @@ TRs:
 - [TR92] Dazzling Gleam
 Armor Tutors:
 - Flip Turn
-Evolves into Starmie-0 @ 0 (UseItem) [84]
+Evolves into Starmie-0 @ lv0 (UseItem) [84]
 
 ======
 121 - Starmie (Stage: 2)
@@ -9743,7 +9741,7 @@ TRs:
 Armor Tutors:
 - Triple Axel
 - Expanding Force
-Evolves into Mr. Rime-0 @ 42 (LevelUp) [0]
+Evolves into Mr. Rime-0 @ lv42 (LevelUp) [0]
 
 ======
 123 - Scyther (Stage: 1)
@@ -9819,7 +9817,7 @@ TRs:
 - [TR61] Bug Buzz
 Armor Tutors:
 - Dual Wingbeat
-Evolves into Scizor-0 @ 0 (TradeHeldItem) [233]
+Evolves into Scizor-0 @ lv0 (TradeHeldItem) [233]
 
 ======
 124 - Jynx (Stage: 2)
@@ -9990,7 +9988,7 @@ TRs:
 - [TR86] Wild Charge
 Armor Tutors:
 - Rising Voltage
-Evolves into Electivire-0 @ 0 (TradeHeldItem) [322]
+Evolves into Electivire-0 @ lv0 (TradeHeldItem) [322]
 
 ======
 126 - Magmar (Stage: 2)
@@ -10068,7 +10066,7 @@ TRs:
 Armor Tutors:
 - Burning Jealousy
 - Scorching Sands
-Evolves into Magmortar-0 @ 0 (TradeHeldItem) [323]
+Evolves into Magmortar-0 @ lv0 (TradeHeldItem) [323]
 
 ======
 127 - Pinsir (Stage: 2)
@@ -10263,7 +10261,7 @@ TRs:
 - [TR03] Hydro Pump
 Armor Tutors:
 None!
-Evolves into Gyarados-0 @ 20 (LevelUp) [0]
+Evolves into Gyarados-0 @ lv20 (LevelUp) [0]
 
 ======
 130 - Gyarados (Stage: 2)
@@ -10552,14 +10550,14 @@ TRs:
 - [TR85] Work Up
 Armor Tutors:
 None!
-Evolves into Leafeon-0 @ 0 (UseItem) [85]
-Evolves into Glaceon-0 @ 0 (UseItem) [849]
-Evolves into Jolteon-0 @ 0 (UseItem) [83]
-Evolves into Vaporeon-0 @ 0 (UseItem) [84]
-Evolves into Flareon-0 @ 0 (UseItem) [82]
-Evolves into Sylveon-0 @ 0 (LevelUpAffection50MoveType) [17]
-Evolves into Espeon-0 @ 0 (LevelUpFriendshipMorning) [0]
-Evolves into Umbreon-0 @ 0 (LevelUpFriendshipNight) [0]
+Evolves into Leafeon-0 @ lv0 (UseItem) [85]
+Evolves into Glaceon-0 @ lv0 (UseItem) [849]
+Evolves into Jolteon-0 @ lv0 (UseItem) [83]
+Evolves into Vaporeon-0 @ lv0 (UseItem) [84]
+Evolves into Flareon-0 @ lv0 (UseItem) [82]
+Evolves into Sylveon-0 @ lv0 (LevelUpAffection50MoveType) [17]
+Evolves into Espeon-0 @ lv0 (LevelUpFriendshipMorning) [0]
+Evolves into Umbreon-0 @ lv0 (LevelUpFriendshipNight) [0]
 
 ======
 134 - Vaporeon (Stage: 2)
@@ -10895,7 +10893,7 @@ TRs:
 - [TR83] Ally Switch
 Armor Tutors:
 None!
-Evolves into Porygon2-0 @ 0 (TradeHeldItem) [252]
+Evolves into Porygon2-0 @ lv0 (TradeHeldItem) [252]
 
 ======
 138 - Omanyte (Stage: 1)
@@ -10977,7 +10975,7 @@ TRs:
 - [TR84] Scald
 Armor Tutors:
 - Meteor Beam
-Evolves into Omastar-0 @ 40 (LevelUp) [0]
+Evolves into Omastar-0 @ lv40 (LevelUp) [0]
 
 ======
 139 - Omastar (Stage: 2)
@@ -11136,7 +11134,7 @@ TRs:
 - [TR98] Liquidation
 Armor Tutors:
 - Meteor Beam
-Evolves into Kabutops-0 @ 40 (LevelUp) [0]
+Evolves into Kabutops-0 @ lv40 (LevelUp) [0]
 
 ======
 141 - Kabutops (Stage: 2)
@@ -11945,7 +11943,7 @@ TRs:
 - [TR62] Dragon Pulse
 Armor Tutors:
 - Scale Shot
-Evolves into Dragonair-0 @ 30 (LevelUp) [0]
+Evolves into Dragonair-0 @ lv30 (LevelUp) [0]
 
 ======
 148 - Dragonair (Stage: 2)
@@ -12021,7 +12019,7 @@ TRs:
 - [TR62] Dragon Pulse
 Armor Tutors:
 - Scale Shot
-Evolves into Dragonite-0 @ 55 (LevelUp) [0]
+Evolves into Dragonite-0 @ lv55 (LevelUp) [0]
 
 ======
 149 - Dragonite (Stage: 3)
@@ -12577,7 +12575,7 @@ TRs:
 - [TR89] Hurricane
 Armor Tutors:
 - Dual Wingbeat
-Evolves into Noctowl-0 @ 20 (LevelUp) [0]
+Evolves into Noctowl-0 @ lv20 (LevelUp) [0]
 
 ======
 164 - Noctowl (Stage: 2)
@@ -12803,7 +12801,7 @@ TRs:
 - [TR92] Dazzling Gleam
 Armor Tutors:
 - Rising Voltage
-Evolves into Lanturn-0 @ 27 (LevelUp) [0]
+Evolves into Lanturn-0 @ lv27 (LevelUp) [0]
 
 ======
 171 - Lanturn (Stage: 2)
@@ -12953,7 +12951,7 @@ TRs:
 - [TR90] Play Rough
 Armor Tutors:
 None!
-Evolves into Pikachu-0 @ 0 (LevelUpFriendship) [0]
+Evolves into Pikachu-0 @ lv0 (LevelUpFriendship) [0]
 
 ======
 173 - Cleffa (Stage: 1)
@@ -13038,7 +13036,7 @@ TRs:
 - [TR90] Play Rough
 Armor Tutors:
 None!
-Evolves into Clefairy-0 @ 0 (LevelUpFriendship) [0]
+Evolves into Clefairy-0 @ lv0 (LevelUpFriendship) [0]
 
 ======
 174 - Igglybuff (Stage: 1)
@@ -13116,7 +13114,7 @@ TRs:
 - [TR90] Play Rough
 Armor Tutors:
 None!
-Evolves into Jigglypuff-0 @ 0 (LevelUpFriendship) [0]
+Evolves into Jigglypuff-0 @ lv0 (LevelUpFriendship) [0]
 
 ======
 175 - Togepi (Stage: 1)
@@ -13205,7 +13203,7 @@ TRs:
 - [TR92] Dazzling Gleam
 Armor Tutors:
 None!
-Evolves into Togetic-0 @ 0 (LevelUpFriendship) [0]
+Evolves into Togetic-0 @ lv0 (LevelUpFriendship) [0]
 
 ======
 176 - Togetic (Stage: 2)
@@ -13300,7 +13298,7 @@ TRs:
 - [TR92] Dazzling Gleam
 Armor Tutors:
 - Dual Wingbeat
-Evolves into Togekiss-0 @ 0 (UseItem) [107]
+Evolves into Togekiss-0 @ lv0 (UseItem) [107]
 
 ======
 177 - Natu (Stage: 1)
@@ -13383,7 +13381,7 @@ TRs:
 Armor Tutors:
 - Dual Wingbeat
 - Expanding Force
-Evolves into Xatu-0 @ 25 (LevelUp) [0]
+Evolves into Xatu-0 @ lv25 (LevelUp) [0]
 
 ======
 178 - Xatu (Stage: 2)
@@ -13637,7 +13635,7 @@ TRs:
 Armor Tutors:
 - Steel Roller
 - Misty Explosion
-Evolves into Azumarill-0 @ 18 (LevelUp) [0]
+Evolves into Azumarill-0 @ lv18 (LevelUp) [0]
 
 ======
 184 - Azumarill (Stage: 3)
@@ -13989,7 +13987,7 @@ TRs:
 - [TR84] Scald
 Armor Tutors:
 None!
-Evolves into Quagsire-0 @ 20 (LevelUp) [0]
+Evolves into Quagsire-0 @ lv20 (LevelUp) [0]
 
 ======
 195 - Quagsire (Stage: 2)
@@ -15159,7 +15157,7 @@ TRs:
 Armor Tutors:
 - Triple Axel
 - Lash Out
-Evolves into Weavile-0 @ 0 (LevelUpHeldItemNight) [326]
+Evolves into Weavile-0 @ lv0 (LevelUpHeldItemNight) [326]
 
 ======
 220 - Swinub (Stage: 1)
@@ -15234,7 +15232,7 @@ TRs:
 - [TR76] Stealth Rock
 Armor Tutors:
 None!
-Evolves into Piloswine-0 @ 33 (LevelUp) [0]
+Evolves into Piloswine-0 @ lv33 (LevelUp) [0]
 
 ======
 221 - Piloswine (Stage: 2)
@@ -15311,7 +15309,7 @@ TRs:
 - [TR94] High Horsepower
 Armor Tutors:
 None!
-Evolves into Mamoswine-0 @ 0 (LevelUpKnowMove) [246]
+Evolves into Mamoswine-0 @ lv0 (LevelUpKnowMove) [246]
 
 ======
 222 - Corsola (Stage: 2)
@@ -15491,7 +15489,7 @@ TRs:
 - [TR98] Liquidation
 Armor Tutors:
 - Meteor Beam
-Evolves into Cursola-0 @ 38 (LevelUp) [0]
+Evolves into Cursola-0 @ lv38 (LevelUp) [0]
 
 ======
 223 - Remoraid (Stage: 1)
@@ -15572,7 +15570,7 @@ TRs:
 - [TR84] Scald
 Armor Tutors:
 None!
-Evolves into Octillery-0 @ 25 (LevelUp) [0]
+Evolves into Octillery-0 @ lv25 (LevelUp) [0]
 
 ======
 224 - Octillery (Stage: 2)
@@ -16057,7 +16055,7 @@ TRs:
 - [TR83] Ally Switch
 Armor Tutors:
 None!
-Evolves into Porygon-Z-0 @ 0 (TradeHeldItem) [324]
+Evolves into Porygon-Z-0 @ lv0 (TradeHeldItem) [324]
 
 ======
 236 - Tyrogue (Stage: 1)
@@ -16120,9 +16118,9 @@ TRs:
 - [TR85] Work Up
 Armor Tutors:
 None!
-Evolves into Hitmonchan-0 @ 20 (LevelUpAeqD) [0]
-Evolves into Hitmonlee-0 @ 20 (LevelUpATK) [0]
-Evolves into Hitmontop-0 @ 20 (LevelUpDEF) [0]
+Evolves into Hitmonchan-0 @ lv20 (LevelUpAeqD) [0]
+Evolves into Hitmonlee-0 @ lv20 (LevelUpATK) [0]
+Evolves into Hitmontop-0 @ lv20 (LevelUpDEF) [0]
 
 ======
 237 - Hitmontop (Stage: 2)
@@ -16286,7 +16284,7 @@ TRs:
 - [TR82] Stored Power
 Armor Tutors:
 None!
-Evolves into Jynx-0 @ 30 (LevelUp) [0]
+Evolves into Jynx-0 @ lv30 (LevelUp) [0]
 
 ======
 239 - Elekid (Stage: 1)
@@ -16363,7 +16361,7 @@ TRs:
 - [TR86] Wild Charge
 Armor Tutors:
 None!
-Evolves into Electabuzz-0 @ 30 (LevelUp) [0]
+Evolves into Electabuzz-0 @ lv30 (LevelUp) [0]
 
 ======
 240 - Magby (Stage: 1)
@@ -16441,7 +16439,7 @@ TRs:
 - [TR55] Flare Blitz
 Armor Tutors:
 None!
-Evolves into Magmar-0 @ 30 (LevelUp) [0]
+Evolves into Magmar-0 @ lv30 (LevelUp) [0]
 
 ======
 241 - Miltank (Stage: 2)
@@ -16970,7 +16968,7 @@ TRs:
 - [TR76] Stealth Rock
 Armor Tutors:
 None!
-Evolves into Pupitar-0 @ 30 (LevelUp) [0]
+Evolves into Pupitar-0 @ lv30 (LevelUp) [0]
 
 ======
 247 - Pupitar (Stage: 2)
@@ -17054,7 +17052,7 @@ TRs:
 - [TR76] Stealth Rock
 Armor Tutors:
 None!
-Evolves into Tyranitar-0 @ 55 (LevelUp) [0]
+Evolves into Tyranitar-0 @ lv55 (LevelUp) [0]
 
 ======
 248 - Tyranitar (Stage: 3)
@@ -17530,7 +17528,7 @@ TRs:
 - [TR85] Work Up
 Armor Tutors:
 - Grassy Glide
-Evolves into Grovyle-0 @ 16 (LevelUp) [0]
+Evolves into Grovyle-0 @ lv16 (LevelUp) [0]
 
 ======
 253 - Grovyle (Stage: 2)
@@ -17616,7 +17614,7 @@ TRs:
 - [TR85] Work Up
 Armor Tutors:
 - Grassy Glide
-Evolves into Sceptile-0 @ 36 (LevelUp) [0]
+Evolves into Sceptile-0 @ lv36 (LevelUp) [0]
 
 ======
 254 - Sceptile (Stage: 3)
@@ -17796,7 +17794,7 @@ TRs:
 - [TR85] Work Up
 Armor Tutors:
 None!
-Evolves into Combusken-0 @ 16 (LevelUp) [0]
+Evolves into Combusken-0 @ lv16 (LevelUp) [0]
 
 ======
 256 - Combusken (Stage: 2)
@@ -17882,7 +17880,7 @@ TRs:
 - [TR85] Work Up
 Armor Tutors:
 - Coaching
-Evolves into Blaziken-0 @ 36 (LevelUp) [0]
+Evolves into Blaziken-0 @ lv36 (LevelUp) [0]
 
 ======
 257 - Blaziken (Stage: 3)
@@ -18065,7 +18063,7 @@ TRs:
 - [TR85] Work Up
 Armor Tutors:
 None!
-Evolves into Marshtomp-0 @ 16 (LevelUp) [0]
+Evolves into Marshtomp-0 @ lv16 (LevelUp) [0]
 
 ======
 259 - Marshtomp (Stage: 2)
@@ -18151,7 +18149,7 @@ TRs:
 - [TR85] Work Up
 Armor Tutors:
 None!
-Evolves into Swampert-0 @ 36 (LevelUp) [0]
+Evolves into Swampert-0 @ lv36 (LevelUp) [0]
 
 ======
 260 - Swampert (Stage: 3)
@@ -18328,7 +18326,7 @@ TRs:
 - [TR85] Work Up
 Armor Tutors:
 None!
-Evolves into Linoone-0 @ 20 (LevelUp) [0]
+Evolves into Linoone-0 @ lv20 (LevelUp) [0]
 
 ======
 967 - Zigzagoon 1 (Stage: 1)
@@ -18412,7 +18410,7 @@ TRs:
 - [TR85] Work Up
 Armor Tutors:
 - Lash Out
-Evolves into Linoone-1 @ 20 (LevelUp) [0]
+Evolves into Linoone-1 @ lv20 (LevelUp) [0]
 
 ======
 264 - Linoone (Stage: 2)
@@ -18590,7 +18588,7 @@ TRs:
 - [TR99] Body Press
 Armor Tutors:
 - Lash Out
-Evolves into Obstagoon-0 @ 35 (LevelUpNight) [0]
+Evolves into Obstagoon-0 @ lv35 (LevelUpNight) [0]
 
 ======
 270 - Lotad (Stage: 1)
@@ -18664,7 +18662,7 @@ TRs:
 - [TR84] Scald
 Armor Tutors:
 - Grassy Glide
-Evolves into Lombre-0 @ 14 (LevelUp) [0]
+Evolves into Lombre-0 @ lv14 (LevelUp) [0]
 
 ======
 271 - Lombre (Stage: 2)
@@ -18750,7 +18748,7 @@ TRs:
 - [TR84] Scald
 Armor Tutors:
 - Grassy Glide
-Evolves into Ludicolo-0 @ 0 (UseItem) [84]
+Evolves into Ludicolo-0 @ lv0 (UseItem) [84]
 
 ======
 272 - Ludicolo (Stage: 3)
@@ -18916,7 +18914,7 @@ TRs:
 - [TR81] Foul Play
 Armor Tutors:
 - Grassy Glide
-Evolves into Nuzleaf-0 @ 14 (LevelUp) [0]
+Evolves into Nuzleaf-0 @ lv14 (LevelUp) [0]
 
 ======
 274 - Nuzleaf (Stage: 2)
@@ -19007,7 +19005,7 @@ TRs:
 Armor Tutors:
 - Grassy Glide
 - Lash Out
-Evolves into Shiftry-0 @ 0 (UseItem) [85]
+Evolves into Shiftry-0 @ lv0 (UseItem) [85]
 
 ======
 275 - Shiftry (Stage: 3)
@@ -19184,7 +19182,7 @@ TRs:
 - [TR98] Liquidation
 Armor Tutors:
 - Dual Wingbeat
-Evolves into Pelipper-0 @ 25 (LevelUp) [0]
+Evolves into Pelipper-0 @ lv25 (LevelUp) [0]
 
 ======
 279 - Pelipper (Stage: 2)
@@ -19362,7 +19360,7 @@ TRs:
 - [TR92] Dazzling Gleam
 Armor Tutors:
 - Expanding Force
-Evolves into Kirlia-0 @ 20 (LevelUp) [0]
+Evolves into Kirlia-0 @ lv20 (LevelUp) [0]
 
 ======
 281 - Kirlia (Stage: 2)
@@ -19452,8 +19450,8 @@ TRs:
 Armor Tutors:
 - Triple Axel
 - Expanding Force
-Evolves into Gardevoir-0 @ 30 (LevelUp) [0]
-Evolves into Gallade-0 @ 30 (UseItemMale) [109]
+Evolves into Gardevoir-0 @ lv30 (LevelUp) [0]
+Evolves into Gallade-0 @ lv30 (UseItemMale) [109]
 
 ======
 282 - Gardevoir (Stage: 3)
@@ -19615,7 +19613,7 @@ TRs:
 - [TR61] Bug Buzz
 Armor Tutors:
 - Skitter Smack
-Evolves into Ninjask-0 @ 20 (LevelUpNinjask) [0]
+Evolves into Ninjask-0 @ lv20 (LevelUpNinjask) [0]
 
 ======
 291 - Ninjask (Stage: 2)
@@ -19832,7 +19830,7 @@ TRs:
 - [TR85] Work Up
 Armor Tutors:
 None!
-Evolves into Loudred-0 @ 20 (LevelUp) [0]
+Evolves into Loudred-0 @ lv20 (LevelUp) [0]
 
 ======
 294 - Loudred (Stage: 2)
@@ -19909,7 +19907,7 @@ TRs:
 - [TR85] Work Up
 Armor Tutors:
 None!
-Evolves into Exploud-0 @ 40 (LevelUp) [0]
+Evolves into Exploud-0 @ lv40 (LevelUp) [0]
 
 ======
 295 - Exploud (Stage: 3)
@@ -20076,7 +20074,7 @@ TRs:
 - [TR85] Work Up
 Armor Tutors:
 None!
-Evolves into Marill-0 @ 0 (LevelUpFriendship) [0]
+Evolves into Marill-0 @ lv0 (LevelUpFriendship) [0]
 
 ======
 302 - Sableye (Stage: 2)
@@ -20358,7 +20356,7 @@ TRs:
 - [TR99] Body Press
 Armor Tutors:
 - Steel Roller
-Evolves into Lairon-0 @ 32 (LevelUp) [0]
+Evolves into Lairon-0 @ lv32 (LevelUp) [0]
 
 ======
 305 - Lairon (Stage: 2)
@@ -20433,7 +20431,7 @@ TRs:
 - [TR99] Body Press
 Armor Tutors:
 - Steel Roller
-Evolves into Aggron-0 @ 42 (LevelUp) [0]
+Evolves into Aggron-0 @ lv42 (LevelUp) [0]
 
 ======
 306 - Aggron (Stage: 3)
@@ -20615,7 +20613,7 @@ TRs:
 - [TR97] Psychic Fangs
 Armor Tutors:
 - Rising Voltage
-Evolves into Manectric-0 @ 26 (LevelUp) [0]
+Evolves into Manectric-0 @ lv26 (LevelUp) [0]
 
 ======
 310 - Manectric (Stage: 2)
@@ -20769,7 +20767,7 @@ TRs:
 - [TR92] Dazzling Gleam
 Armor Tutors:
 - Grassy Glide
-Evolves into Roserade-0 @ 0 (UseItem) [107]
+Evolves into Roserade-0 @ lv0 (UseItem) [107]
 
 ======
 318 - Carvanha (Stage: 1)
@@ -20851,7 +20849,7 @@ TRs:
 Armor Tutors:
 - Flip Turn
 - Scale Shot
-Evolves into Sharpedo-0 @ 30 (LevelUp) [0]
+Evolves into Sharpedo-0 @ lv30 (LevelUp) [0]
 
 ======
 319 - Sharpedo (Stage: 2)
@@ -21020,7 +21018,7 @@ TRs:
 - [TR99] Body Press
 Armor Tutors:
 - Steel Roller
-Evolves into Wailord-0 @ 40 (LevelUp) [0]
+Evolves into Wailord-0 @ lv40 (LevelUp) [0]
 
 ======
 321 - Wailord (Stage: 2)
@@ -21257,7 +21255,7 @@ TRs:
 - [TR67] Earth Power
 Armor Tutors:
 - Scorching Sands
-Evolves into Vibrava-0 @ 35 (LevelUp) [0]
+Evolves into Vibrava-0 @ lv35 (LevelUp) [0]
 
 ======
 329 - Vibrava (Stage: 2)
@@ -21341,7 +21339,7 @@ TRs:
 Armor Tutors:
 - Scorching Sands
 - Dual Wingbeat
-Evolves into Flygon-0 @ 45 (LevelUp) [0]
+Evolves into Flygon-0 @ lv45 (LevelUp) [0]
 
 ======
 330 - Flygon (Stage: 3)
@@ -21514,7 +21512,7 @@ TRs:
 - [TR92] Dazzling Gleam
 Armor Tutors:
 - Dual Wingbeat
-Evolves into Altaria-0 @ 35 (LevelUp) [0]
+Evolves into Altaria-0 @ lv35 (LevelUp) [0]
 
 ======
 334 - Altaria (Stage: 2)
@@ -21857,7 +21855,7 @@ TRs:
 - [TR84] Scald
 Armor Tutors:
 None!
-Evolves into Whiscash-0 @ 30 (LevelUp) [0]
+Evolves into Whiscash-0 @ lv30 (LevelUp) [0]
 
 ======
 340 - Whiscash (Stage: 2)
@@ -22020,7 +22018,7 @@ TRs:
 - [TR84] Scald
 Armor Tutors:
 None!
-Evolves into Crawdaunt-0 @ 30 (LevelUp) [0]
+Evolves into Crawdaunt-0 @ lv30 (LevelUp) [0]
 
 ======
 342 - Crawdaunt (Stage: 2)
@@ -22199,7 +22197,7 @@ TRs:
 Armor Tutors:
 - Scorching Sands
 - Expanding Force
-Evolves into Claydol-0 @ 36 (LevelUp) [0]
+Evolves into Claydol-0 @ lv36 (LevelUp) [0]
 
 ======
 344 - Claydol (Stage: 2)
@@ -22371,7 +22369,7 @@ TRs:
 - [TR77] Grass Knot
 Armor Tutors:
 - Meteor Beam
-Evolves into Cradily-0 @ 40 (LevelUp) [0]
+Evolves into Cradily-0 @ lv40 (LevelUp) [0]
 
 ======
 346 - Cradily (Stage: 2)
@@ -22516,7 +22514,7 @@ TRs:
 - [TR76] Stealth Rock
 Armor Tutors:
 - Meteor Beam
-Evolves into Armaldo-0 @ 40 (LevelUp) [0]
+Evolves into Armaldo-0 @ lv40 (LevelUp) [0]
 
 ======
 348 - Armaldo (Stage: 2)
@@ -22650,8 +22648,8 @@ TRs:
 - [TR84] Scald
 Armor Tutors:
 - Scale Shot
-Evolves into Milotic-0 @ 0 (LevelUpBeauty) [170]
-Evolves into Milotic-0 @ 0 (TradeHeldItem) [537]
+Evolves into Milotic-0 @ lv0 (LevelUpBeauty) [170]
+Evolves into Milotic-0 @ lv0 (TradeHeldItem) [537]
 
 ======
 350 - Milotic (Stage: 2)
@@ -22813,7 +22811,7 @@ TRs:
 Armor Tutors:
 - Skitter Smack
 - Poltergeist
-Evolves into Dusclops-0 @ 37 (LevelUp) [0]
+Evolves into Dusclops-0 @ lv37 (LevelUp) [0]
 
 ======
 356 - Dusclops (Stage: 2)
@@ -22905,7 +22903,7 @@ TRs:
 Armor Tutors:
 - Skitter Smack
 - Poltergeist
-Evolves into Dusknoir-0 @ 0 (TradeHeldItem) [325]
+Evolves into Dusknoir-0 @ lv0 (TradeHeldItem) [325]
 
 ======
 359 - Absol (Stage: 2)
@@ -23038,7 +23036,7 @@ TRs:
 - [TR30] Encore
 Armor Tutors:
 None!
-Evolves into Wobbuffet-0 @ 15 (LevelUp) [0]
+Evolves into Wobbuffet-0 @ lv15 (LevelUp) [0]
 
 ======
 361 - Snorunt (Stage: 1)
@@ -23108,8 +23106,8 @@ TRs:
 - [TR33] Shadow Ball
 Armor Tutors:
 None!
-Evolves into Glalie-0 @ 42 (LevelUp) [0]
-Evolves into Froslass-0 @ 42 (UseItemFemale) [109]
+Evolves into Glalie-0 @ lv42 (LevelUp) [0]
+Evolves into Froslass-0 @ lv42 (UseItemFemale) [109]
 
 ======
 362 - Glalie (Stage: 2)
@@ -23258,7 +23256,7 @@ TRs:
 - [TR31] Iron Tail
 Armor Tutors:
 - Steel Roller
-Evolves into Sealeo-0 @ 32 (LevelUp) [0]
+Evolves into Sealeo-0 @ lv32 (LevelUp) [0]
 
 ======
 364 - Sealeo (Stage: 2)
@@ -23324,7 +23322,7 @@ TRs:
 - [TR31] Iron Tail
 Armor Tutors:
 - Steel Roller
-Evolves into Walrein-0 @ 44 (LevelUp) [0]
+Evolves into Walrein-0 @ lv44 (LevelUp) [0]
 
 ======
 365 - Walrein (Stage: 3)
@@ -23556,7 +23554,7 @@ TRs:
 - [TR69] Zen Headbutt
 Armor Tutors:
 None!
-Evolves into Shelgon-0 @ 30 (LevelUp) [0]
+Evolves into Shelgon-0 @ lv30 (LevelUp) [0]
 
 ======
 372 - Shelgon (Stage: 2)
@@ -23625,7 +23623,7 @@ TRs:
 - [TR69] Zen Headbutt
 Armor Tutors:
 None!
-Evolves into Salamence-0 @ 50 (LevelUp) [0]
+Evolves into Salamence-0 @ lv50 (LevelUp) [0]
 
 ======
 373 - Salamence (Stage: 3)
@@ -23739,7 +23737,7 @@ TRs:
 - [TR74] Iron Head
 Armor Tutors:
 None!
-Evolves into Metang-0 @ 20 (LevelUp) [0]
+Evolves into Metang-0 @ lv20 (LevelUp) [0]
 
 ======
 375 - Metang (Stage: 2)
@@ -23823,7 +23821,7 @@ Armor Tutors:
 - Expanding Force
 - Meteor Beam
 - Steel Roller
-Evolves into Metagross-0 @ 45 (LevelUp) [0]
+Evolves into Metagross-0 @ lv45 (LevelUp) [0]
 
 ======
 376 - Metagross (Stage: 3)
@@ -24606,7 +24604,6 @@ Armor Tutors:
 - Meteor Beam
 - Scale Shot
 
-
 ======
 385 - Jirachi (Stage: 3)
 ======
@@ -24780,7 +24777,7 @@ TRs:
 - [TR97] Psychic Fangs
 Armor Tutors:
 - Rising Voltage
-Evolves into Luxio-0 @ 15 (LevelUp) [0]
+Evolves into Luxio-0 @ lv15 (LevelUp) [0]
 
 ======
 404 - Luxio (Stage: 2)
@@ -24847,7 +24844,7 @@ TRs:
 - [TR97] Psychic Fangs
 Armor Tutors:
 - Rising Voltage
-Evolves into Luxray-0 @ 30 (LevelUp) [0]
+Evolves into Luxray-0 @ lv30 (LevelUp) [0]
 
 ======
 405 - Luxray (Stage: 3)
@@ -24983,7 +24980,7 @@ TRs:
 - [TR92] Dazzling Gleam
 Armor Tutors:
 - Grassy Glide
-Evolves into Roselia-0 @ 0 (LevelUpFriendshipMorning) [0]
+Evolves into Roselia-0 @ lv0 (LevelUpFriendshipMorning) [0]
 
 ======
 407 - Roserade (Stage: 3)
@@ -25093,7 +25090,7 @@ TRs:
 - [TR61] Bug Buzz
 Armor Tutors:
 - Dual Wingbeat
-Evolves into Vespiquen-0 @ 21 (LevelUpFemale) [0]
+Evolves into Vespiquen-0 @ lv21 (LevelUpFemale) [0]
 
 ======
 416 - Vespiquen (Stage: 2)
@@ -25242,7 +25239,7 @@ TRs:
 - [TR96] Pollen Puff
 Armor Tutors:
 - Grassy Glide
-Evolves into Cherrim-0 @ 25 (LevelUp) [0]
+Evolves into Cherrim-0 @ lv25 (LevelUp) [0]
 
 ======
 421 - Cherrim (Stage: 2)
@@ -25446,7 +25443,7 @@ TRs:
 - [TR84] Scald
 Armor Tutors:
 - Skitter Smack
-Evolves into Gastrodon-0 @ 30 (LevelUp) [0]
+Evolves into Gastrodon-0 @ lv30 (LevelUp) [0]
 
 ======
 983 - Shellos 1 (Stage: 1)
@@ -25516,7 +25513,7 @@ TRs:
 - [TR84] Scald
 Armor Tutors:
 - Skitter Smack
-Evolves into Gastrodon-1 @ 30 (LevelUp) [0]
+Evolves into Gastrodon-1 @ lv30 (LevelUp) [0]
 
 ======
 423 - Gastrodon (Stage: 2)
@@ -25740,7 +25737,7 @@ TRs:
 - [TR83] Ally Switch
 Armor Tutors:
 None!
-Evolves into Drifblim-0 @ 28 (LevelUp) [0]
+Evolves into Drifblim-0 @ lv28 (LevelUp) [0]
 
 ======
 426 - Drifblim (Stage: 2)
@@ -25911,7 +25908,7 @@ TRs:
 - [TR90] Play Rough
 Armor Tutors:
 - Triple Axel
-Evolves into Lopunny-0 @ 0 (LevelUpFriendship) [0]
+Evolves into Lopunny-0 @ lv0 (LevelUpFriendship) [0]
 
 ======
 428 - Lopunny (Stage: 2)
@@ -26089,7 +26086,7 @@ TRs:
 Armor Tutors:
 - Corrosive Gas
 - Lash Out
-Evolves into Skuntank-0 @ 34 (LevelUp) [0]
+Evolves into Skuntank-0 @ lv34 (LevelUp) [0]
 
 ======
 435 - Skuntank (Stage: 2)
@@ -26252,7 +26249,7 @@ TRs:
 Armor Tutors:
 - Expanding Force
 - Steel Roller
-Evolves into Bronzong-0 @ 33 (LevelUp) [0]
+Evolves into Bronzong-0 @ lv33 (LevelUp) [0]
 
 ======
 437 - Bronzong (Stage: 2)
@@ -26413,7 +26410,7 @@ TRs:
 - [TR81] Foul Play
 Armor Tutors:
 None!
-Evolves into Sudowoodo-0 @ 0 (LevelUpKnowMove) [102]
+Evolves into Sudowoodo-0 @ lv0 (LevelUpKnowMove) [102]
 
 ======
 439 - Mime Jr. (Stage: 1)
@@ -26505,7 +26502,7 @@ TRs:
 - [TR92] Dazzling Gleam
 Armor Tutors:
 None!
-Evolves into Mr. Mime-1 @ 0 (LevelUpKnowMove) [102]
+Evolves into Mr. Mime-1 @ lv0 (LevelUpKnowMove) [102]
 
 ======
 440 - Happiny (Stage: 1)
@@ -26574,7 +26571,7 @@ TRs:
 - [TR85] Work Up
 Armor Tutors:
 None!
-Evolves into Chansey-0 @ 0 (LevelUpHeldItemDay) [110]
+Evolves into Chansey-0 @ lv0 (LevelUpHeldItemDay) [110]
 
 ======
 442 - Spiritomb (Stage: 2)
@@ -26724,7 +26721,7 @@ TRs:
 Armor Tutors:
 - Scorching Sands
 - Scale Shot
-Evolves into Gabite-0 @ 24 (LevelUp) [0]
+Evolves into Gabite-0 @ lv24 (LevelUp) [0]
 
 ======
 444 - Gabite (Stage: 2)
@@ -26793,7 +26790,7 @@ TRs:
 Armor Tutors:
 - Scorching Sands
 - Scale Shot
-Evolves into Garchomp-0 @ 48 (LevelUp) [0]
+Evolves into Garchomp-0 @ lv48 (LevelUp) [0]
 
 ======
 445 - Garchomp (Stage: 3)
@@ -26977,7 +26974,7 @@ TRs:
 - [TR85] Work Up
 Armor Tutors:
 None!
-Evolves into Snorlax-0 @ 0 (LevelUpFriendship) [0]
+Evolves into Snorlax-0 @ lv0 (LevelUpFriendship) [0]
 
 ======
 447 - Riolu (Stage: 1)
@@ -27071,7 +27068,7 @@ TRs:
 - [TR85] Work Up
 Armor Tutors:
 - Coaching
-Evolves into Lucario-0 @ 0 (LevelUpFriendshipMorning) [0]
+Evolves into Lucario-0 @ lv0 (LevelUpFriendshipMorning) [0]
 
 ======
 448 - Lucario (Stage: 2)
@@ -27254,7 +27251,7 @@ TRs:
 - [TR94] High Horsepower
 Armor Tutors:
 - Scorching Sands
-Evolves into Hippowdon-0 @ 34 (LevelUp) [0]
+Evolves into Hippowdon-0 @ lv34 (LevelUp) [0]
 
 ======
 450 - Hippowdon (Stage: 2)
@@ -27416,7 +27413,7 @@ TRs:
 - [TR61] Bug Buzz
 Armor Tutors:
 - Skitter Smack
-Evolves into Drapion-0 @ 40 (LevelUp) [0]
+Evolves into Drapion-0 @ lv40 (LevelUp) [0]
 
 ======
 452 - Drapion (Stage: 2)
@@ -27616,7 +27613,7 @@ TRs:
 Armor Tutors:
 - Coaching
 - Lash Out
-Evolves into Toxicroak-0 @ 37 (LevelUp) [0]
+Evolves into Toxicroak-0 @ lv37 (LevelUp) [0]
 
 ======
 454 - Toxicroak (Stage: 2)
@@ -27788,7 +27785,7 @@ TRs:
 - [TR84] Scald
 Armor Tutors:
 None!
-Evolves into Mantine-0 @ 0 (LevelUpWithTeammate) [223]
+Evolves into Mantine-0 @ lv0 (LevelUpWithTeammate) [223]
 
 ======
 459 - Snover (Stage: 1)
@@ -27861,7 +27858,7 @@ TRs:
 - [TR77] Grass Knot
 Armor Tutors:
 - Grassy Glide
-Evolves into Abomasnow-0 @ 40 (LevelUp) [0]
+Evolves into Abomasnow-0 @ lv40 (LevelUp) [0]
 
 ======
 460 - Abomasnow (Stage: 2)
@@ -30773,7 +30770,7 @@ TRs:
 - [TR97] Psychic Fangs
 Armor Tutors:
 None!
-Evolves into Herdier-0 @ 16 (LevelUp) [0]
+Evolves into Herdier-0 @ lv16 (LevelUp) [0]
 
 ======
 507 - Herdier (Stage: 2)
@@ -30843,7 +30840,7 @@ TRs:
 - [TR97] Psychic Fangs
 Armor Tutors:
 None!
-Evolves into Stoutland-0 @ 32 (LevelUp) [0]
+Evolves into Stoutland-0 @ lv32 (LevelUp) [0]
 
 ======
 508 - Stoutland (Stage: 3)
@@ -30998,7 +30995,7 @@ TRs:
 - [TR90] Play Rough
 Armor Tutors:
 - Lash Out
-Evolves into Liepard-0 @ 20 (LevelUp) [0]
+Evolves into Liepard-0 @ lv20 (LevelUp) [0]
 
 ======
 510 - Liepard (Stage: 2)
@@ -31151,7 +31148,7 @@ TRs:
 - [TR92] Dazzling Gleam
 Armor Tutors:
 - Expanding Force
-Evolves into Musharna-0 @ 0 (UseItem) [81]
+Evolves into Musharna-0 @ lv0 (UseItem) [81]
 
 ======
 518 - Musharna (Stage: 2)
@@ -31292,7 +31289,7 @@ TRs:
 - [TR85] Work Up
 Armor Tutors:
 - Dual Wingbeat
-Evolves into Tranquill-0 @ 21 (LevelUp) [0]
+Evolves into Tranquill-0 @ lv21 (LevelUp) [0]
 
 ======
 520 - Tranquill (Stage: 2)
@@ -31349,7 +31346,7 @@ TRs:
 - [TR85] Work Up
 Armor Tutors:
 - Dual Wingbeat
-Evolves into Unfezant-0 @ 32 (LevelUp) [0]
+Evolves into Unfezant-0 @ lv32 (LevelUp) [0]
 
 ======
 521 - Unfezant (Stage: 3)
@@ -31476,7 +31473,7 @@ TRs:
 - [TR99] Body Press
 Armor Tutors:
 - Meteor Beam
-Evolves into Boldore-0 @ 25 (LevelUp) [0]
+Evolves into Boldore-0 @ lv25 (LevelUp) [0]
 
 ======
 525 - Boldore (Stage: 2)
@@ -31541,7 +31538,7 @@ TRs:
 - [TR99] Body Press
 Armor Tutors:
 - Meteor Beam
-Evolves into Gigalith-0 @ 0 (Trade) [0]
+Evolves into Gigalith-0 @ lv0 (Trade) [0]
 
 ======
 526 - Gigalith (Stage: 3)
@@ -31704,7 +31701,7 @@ TRs:
 Armor Tutors:
 - Dual Wingbeat
 - Expanding Force
-Evolves into Swoobat-0 @ 0 (LevelUpFriendship) [0]
+Evolves into Swoobat-0 @ lv0 (LevelUpFriendship) [0]
 
 ======
 528 - Swoobat (Stage: 2)
@@ -31861,7 +31858,7 @@ TRs:
 - [TR94] High Horsepower
 Armor Tutors:
 - Scorching Sands
-Evolves into Excadrill-0 @ 31 (LevelUp) [0]
+Evolves into Excadrill-0 @ lv31 (LevelUp) [0]
 
 ======
 530 - Excadrill (Stage: 2)
@@ -32123,7 +32120,7 @@ TRs:
 - [TR85] Work Up
 Armor Tutors:
 - Coaching
-Evolves into Gurdurr-0 @ 25 (LevelUp) [0]
+Evolves into Gurdurr-0 @ lv25 (LevelUp) [0]
 
 ======
 533 - Gurdurr (Stage: 2)
@@ -32202,7 +32199,7 @@ TRs:
 - [TR94] High Horsepower
 Armor Tutors:
 - Coaching
-Evolves into Conkeldurr-0 @ 0 (Trade) [0]
+Evolves into Conkeldurr-0 @ lv0 (Trade) [0]
 
 ======
 534 - Conkeldurr (Stage: 3)
@@ -32353,7 +32350,7 @@ TRs:
 - [TR91] Venom Drench
 Armor Tutors:
 None!
-Evolves into Palpitoad-0 @ 25 (LevelUp) [0]
+Evolves into Palpitoad-0 @ lv25 (LevelUp) [0]
 
 ======
 536 - Palpitoad (Stage: 2)
@@ -32418,7 +32415,7 @@ TRs:
 - [TR91] Venom Drench
 Armor Tutors:
 None!
-Evolves into Seismitoad-0 @ 36 (LevelUp) [0]
+Evolves into Seismitoad-0 @ lv36 (LevelUp) [0]
 
 ======
 537 - Seismitoad (Stage: 3)
@@ -32731,7 +32728,7 @@ TRs:
 Armor Tutors:
 - Skitter Smack
 - Steel Roller
-Evolves into Whirlipede-0 @ 22 (LevelUp) [0]
+Evolves into Whirlipede-0 @ lv22 (LevelUp) [0]
 
 ======
 544 - Whirlipede (Stage: 2)
@@ -32795,7 +32792,7 @@ TRs:
 Armor Tutors:
 - Skitter Smack
 - Steel Roller
-Evolves into Scolipede-0 @ 30 (LevelUp) [0]
+Evolves into Scolipede-0 @ lv30 (LevelUp) [0]
 
 ======
 545 - Scolipede (Stage: 3)
@@ -32951,7 +32948,7 @@ TRs:
 - [TR92] Dazzling Gleam
 Armor Tutors:
 - Grassy Glide
-Evolves into Whimsicott-0 @ 0 (UseItem) [80]
+Evolves into Whimsicott-0 @ lv0 (UseItem) [80]
 
 ======
 547 - Whimsicott (Stage: 2)
@@ -33101,7 +33098,7 @@ TRs:
 - [TR96] Pollen Puff
 Armor Tutors:
 - Grassy Glide
-Evolves into Lilligant-0 @ 0 (UseItem) [80]
+Evolves into Lilligant-0 @ lv0 (UseItem) [80]
 
 ======
 549 - Lilligant (Stage: 2)
@@ -33414,7 +33411,7 @@ Armor Tutors:
 - Scorching Sands
 - Skitter Smack
 - Lash Out
-Evolves into Krokorok-0 @ 29 (LevelUp) [0]
+Evolves into Krokorok-0 @ lv29 (LevelUp) [0]
 
 ======
 552 - Krokorok (Stage: 2)
@@ -33502,7 +33499,7 @@ Armor Tutors:
 - Scorching Sands
 - Skitter Smack
 - Lash Out
-Evolves into Krookodile-0 @ 40 (LevelUp) [0]
+Evolves into Krookodile-0 @ lv40 (LevelUp) [0]
 
 ======
 553 - Krookodile (Stage: 3)
@@ -33686,7 +33683,7 @@ TRs:
 - [TR85] Work Up
 Armor Tutors:
 None!
-Evolves into Darmanitan-0 @ 35 (LevelUp) [0]
+Evolves into Darmanitan-0 @ lv35 (LevelUp) [0]
 
 ======
 1010 - Darumaka 1 (Stage: 1)
@@ -33775,7 +33772,7 @@ TRs:
 - [TR85] Work Up
 Armor Tutors:
 None!
-Evolves into Darmanitan-2 @ 0 (UseItem) [849]
+Evolves into Darmanitan-2 @ lv0 (UseItem) [849]
 
 ======
 555 - Darmanitan (Stage: 2)
@@ -34311,7 +34308,7 @@ TRs:
 - [TR76] Stealth Rock
 Armor Tutors:
 - Skitter Smack
-Evolves into Crustle-0 @ 34 (LevelUp) [0]
+Evolves into Crustle-0 @ lv34 (LevelUp) [0]
 
 ======
 558 - Crustle (Stage: 2)
@@ -34482,7 +34479,7 @@ TRs:
 Armor Tutors:
 - Coaching
 - Lash Out
-Evolves into Scrafty-0 @ 39 (LevelUp) [0]
+Evolves into Scrafty-0 @ lv39 (LevelUp) [0]
 
 ======
 560 - Scrafty (Stage: 2)
@@ -34738,7 +34735,7 @@ TRs:
 - [TR83] Ally Switch
 Armor Tutors:
 - Poltergeist
-Evolves into Cofagrigus-0 @ 34 (LevelUp) [0]
+Evolves into Cofagrigus-0 @ lv34 (LevelUp) [0]
 
 ======
 1014 - Yamask 1 (Stage: 1)
@@ -34815,7 +34812,7 @@ TRs:
 - [TR83] Ally Switch
 Armor Tutors:
 - Poltergeist
-Evolves into Runerigus-0 @ 0 (HitPointsLostInBattle) [49]
+Evolves into Runerigus-0 @ lv0 (HitPointsLostInBattle) [49]
 
 ======
 563 - Cofagrigus (Stage: 2)
@@ -34983,7 +34980,7 @@ TRs:
 - [TR98] Liquidation
 Armor Tutors:
 - Meteor Beam
-Evolves into Carracosta-0 @ 37 (LevelUp) [0]
+Evolves into Carracosta-0 @ lv37 (LevelUp) [0]
 
 ======
 565 - Carracosta (Stage: 2)
@@ -35153,7 +35150,7 @@ Armor Tutors:
 - Dual Wingbeat
 - Meteor Beam
 - Lash Out
-Evolves into Archeops-0 @ 37 (LevelUp) [0]
+Evolves into Archeops-0 @ lv37 (LevelUp) [0]
 
 ======
 567 - Archeops (Stage: 2)
@@ -35311,7 +35308,7 @@ TRs:
 - [TR91] Venom Drench
 Armor Tutors:
 - Corrosive Gas
-Evolves into Garbodor-0 @ 36 (LevelUp) [0]
+Evolves into Garbodor-0 @ lv36 (LevelUp) [0]
 
 ======
 569 - Garbodor (Stage: 2)
@@ -35476,7 +35473,7 @@ Armor Tutors:
 - Burning Jealousy
 - Skitter Smack
 - Lash Out
-Evolves into Zoroark-0 @ 30 (LevelUp) [0]
+Evolves into Zoroark-0 @ lv30 (LevelUp) [0]
 
 ======
 571 - Zoroark (Stage: 2)
@@ -35642,7 +35639,7 @@ TRs:
 - [TR92] Dazzling Gleam
 Armor Tutors:
 - Triple Axel
-Evolves into Cinccino-0 @ 0 (UseItem) [107]
+Evolves into Cinccino-0 @ lv0 (UseItem) [107]
 
 ======
 573 - Cinccino (Stage: 2)
@@ -35807,7 +35804,7 @@ TRs:
 - [TR83] Ally Switch
 Armor Tutors:
 - Expanding Force
-Evolves into Gothorita-0 @ 32 (LevelUp) [0]
+Evolves into Gothorita-0 @ lv32 (LevelUp) [0]
 
 ======
 575 - Gothorita (Stage: 2)
@@ -35887,7 +35884,7 @@ TRs:
 - [TR83] Ally Switch
 Armor Tutors:
 - Expanding Force
-Evolves into Gothitelle-0 @ 41 (LevelUp) [0]
+Evolves into Gothitelle-0 @ lv41 (LevelUp) [0]
 
 ======
 576 - Gothitelle (Stage: 3)
@@ -36055,7 +36052,7 @@ TRs:
 Armor Tutors:
 - Expanding Force
 - Steel Roller
-Evolves into Duosion-0 @ 32 (LevelUp) [0]
+Evolves into Duosion-0 @ lv32 (LevelUp) [0]
 
 ======
 578 - Duosion (Stage: 2)
@@ -36134,7 +36131,7 @@ TRs:
 Armor Tutors:
 - Expanding Force
 - Steel Roller
-Evolves into Reuniclus-0 @ 41 (LevelUp) [0]
+Evolves into Reuniclus-0 @ lv41 (LevelUp) [0]
 
 ======
 579 - Reuniclus (Stage: 3)
@@ -36296,7 +36293,7 @@ TRs:
 - [TR83] Ally Switch
 Armor Tutors:
 None!
-Evolves into Vanillish-0 @ 35 (LevelUp) [0]
+Evolves into Vanillish-0 @ lv35 (LevelUp) [0]
 
 ======
 583 - Vanillish (Stage: 2)
@@ -36360,7 +36357,7 @@ TRs:
 - [TR83] Ally Switch
 Armor Tutors:
 None!
-Evolves into Vanilluxe-0 @ 47 (LevelUp) [0]
+Evolves into Vanilluxe-0 @ lv47 (LevelUp) [0]
 
 ======
 584 - Vanilluxe (Stage: 3)
@@ -36573,7 +36570,7 @@ TRs:
 - [TR87] Drill Run
 Armor Tutors:
 None!
-Evolves into Escavalier-0 @ 0 (TradeSpecies) [0]
+Evolves into Escavalier-0 @ lv0 (TradeSpecies) [0]
 
 ======
 589 - Escavalier (Stage: 2)
@@ -36717,7 +36714,7 @@ TRs:
 - [TR96] Pollen Puff
 Armor Tutors:
 None!
-Evolves into Amoonguss-0 @ 39 (LevelUp) [0]
+Evolves into Amoonguss-0 @ lv39 (LevelUp) [0]
 
 ======
 591 - Amoonguss (Stage: 2)
@@ -36861,7 +36858,7 @@ TRs:
 - [TR92] Dazzling Gleam
 Armor Tutors:
 - Poltergeist
-Evolves into Jellicent-0 @ 40 (LevelUp) [0]
+Evolves into Jellicent-0 @ lv40 (LevelUp) [0]
 
 ======
 593 - Jellicent (Stage: 2)
@@ -37012,7 +37009,7 @@ TRs:
 Armor Tutors:
 - Rising Voltage
 - Skitter Smack
-Evolves into Galvantula-0 @ 36 (LevelUp) [0]
+Evolves into Galvantula-0 @ lv36 (LevelUp) [0]
 
 ======
 596 - Galvantula (Stage: 2)
@@ -37158,7 +37155,7 @@ TRs:
 - [TR76] Stealth Rock
 Armor Tutors:
 - Steel Roller
-Evolves into Ferrothorn-0 @ 40 (LevelUp) [0]
+Evolves into Ferrothorn-0 @ lv40 (LevelUp) [0]
 
 ======
 598 - Ferrothorn (Stage: 2)
@@ -37294,7 +37291,7 @@ TRs:
 Armor Tutors:
 - Rising Voltage
 - Steel Roller
-Evolves into Klang-0 @ 38 (LevelUp) [0]
+Evolves into Klang-0 @ lv38 (LevelUp) [0]
 
 ======
 600 - Klang (Stage: 2)
@@ -37352,7 +37349,7 @@ TRs:
 Armor Tutors:
 - Rising Voltage
 - Steel Roller
-Evolves into Klinklang-0 @ 49 (LevelUp) [0]
+Evolves into Klinklang-0 @ lv49 (LevelUp) [0]
 
 ======
 601 - Klinklang (Stage: 3)
@@ -37497,7 +37494,7 @@ TRs:
 Armor Tutors:
 - Expanding Force
 - Meteor Beam
-Evolves into Beheeyem-0 @ 42 (LevelUp) [0]
+Evolves into Beheeyem-0 @ lv42 (LevelUp) [0]
 
 ======
 606 - Beheeyem (Stage: 2)
@@ -37657,7 +37654,7 @@ Armor Tutors:
 - Burning Jealousy
 - Skitter Smack
 - Poltergeist
-Evolves into Lampent-0 @ 41 (LevelUp) [0]
+Evolves into Lampent-0 @ lv41 (LevelUp) [0]
 
 ======
 608 - Lampent (Stage: 2)
@@ -37730,7 +37727,7 @@ Armor Tutors:
 - Burning Jealousy
 - Skitter Smack
 - Poltergeist
-Evolves into Chandelure-0 @ 0 (UseItem) [108]
+Evolves into Chandelure-0 @ lv0 (UseItem) [108]
 
 ======
 609 - Chandelure (Stage: 3)
@@ -37885,7 +37882,7 @@ TRs:
 - [TR62] Dragon Pulse
 Armor Tutors:
 - Scale Shot
-Evolves into Fraxure-0 @ 38 (LevelUp) [0]
+Evolves into Fraxure-0 @ lv38 (LevelUp) [0]
 
 ======
 611 - Fraxure (Stage: 2)
@@ -37962,7 +37959,7 @@ TRs:
 - [TR62] Dragon Pulse
 Armor Tutors:
 - Scale Shot
-Evolves into Haxorus-0 @ 48 (LevelUp) [0]
+Evolves into Haxorus-0 @ lv48 (LevelUp) [0]
 
 ======
 612 - Haxorus (Stage: 3)
@@ -38125,7 +38122,7 @@ TRs:
 - [TR90] Play Rough
 Armor Tutors:
 None!
-Evolves into Beartic-0 @ 37 (LevelUp) [0]
+Evolves into Beartic-0 @ lv37 (LevelUp) [0]
 
 ======
 614 - Beartic (Stage: 2)
@@ -38350,7 +38347,7 @@ TRs:
 - [TR65] Energy Ball
 Armor Tutors:
 - Skitter Smack
-Evolves into Accelgor-0 @ 0 (TradeSpecies) [0]
+Evolves into Accelgor-0 @ lv0 (TradeSpecies) [0]
 
 ======
 617 - Accelgor (Stage: 2)
@@ -38682,7 +38679,7 @@ TRs:
 - [TR85] Work Up
 Armor Tutors:
 - Coaching
-Evolves into Mienshao-0 @ 50 (LevelUp) [0]
+Evolves into Mienshao-0 @ lv50 (LevelUp) [0]
 
 ======
 620 - Mienshao (Stage: 2)
@@ -38948,7 +38945,7 @@ TRs:
 Armor Tutors:
 - Scorching Sands
 - Poltergeist
-Evolves into Golurk-0 @ 43 (LevelUp) [0]
+Evolves into Golurk-0 @ lv43 (LevelUp) [0]
 
 ======
 623 - Golurk (Stage: 2)
@@ -39133,7 +39130,7 @@ TRs:
 - [TR81] Foul Play
 Armor Tutors:
 - Lash Out
-Evolves into Bisharp-0 @ 52 (LevelUp) [0]
+Evolves into Bisharp-0 @ lv52 (LevelUp) [0]
 
 ======
 625 - Bisharp (Stage: 2)
@@ -39371,7 +39368,7 @@ TRs:
 - [TR89] Hurricane
 Armor Tutors:
 - Dual Wingbeat
-Evolves into Braviary-0 @ 54 (LevelUp) [0]
+Evolves into Braviary-0 @ lv54 (LevelUp) [0]
 
 ======
 628 - Braviary (Stage: 2)
@@ -39518,7 +39515,7 @@ TRs:
 Armor Tutors:
 - Dual Wingbeat
 - Lash Out
-Evolves into Mandibuzz-0 @ 54 (LevelUp) [0]
+Evolves into Mandibuzz-0 @ lv54 (LevelUp) [0]
 
 ======
 630 - Mandibuzz (Stage: 2)
@@ -39830,7 +39827,7 @@ TRs:
 - [TR85] Work Up
 Armor Tutors:
 None!
-Evolves into Zweilous-0 @ 50 (LevelUp) [0]
+Evolves into Zweilous-0 @ lv50 (LevelUp) [0]
 
 ======
 634 - Zweilous (Stage: 2)
@@ -39906,7 +39903,7 @@ TRs:
 - [TR85] Work Up
 Armor Tutors:
 None!
-Evolves into Hydreigon-0 @ 64 (LevelUp) [0]
+Evolves into Hydreigon-0 @ lv64 (LevelUp) [0]
 
 ======
 635 - Hydreigon (Stage: 3)
@@ -40081,7 +40078,7 @@ TRs:
 - [TR86] Wild Charge
 Armor Tutors:
 - Skitter Smack
-Evolves into Volcarona-0 @ 59 (LevelUp) [0]
+Evolves into Volcarona-0 @ lv59 (LevelUp) [0]
 
 ======
 637 - Volcarona (Stage: 3)
@@ -41960,7 +41957,7 @@ TRs:
 - [TR86] Wild Charge
 Armor Tutors:
 None!
-Evolves into Diggersby-0 @ 20 (LevelUp) [0]
+Evolves into Diggersby-0 @ lv20 (LevelUp) [0]
 
 ======
 660 - Diggersby (Stage: 2)
@@ -42110,7 +42107,7 @@ TRs:
 - [TR85] Work Up
 Armor Tutors:
 - Dual Wingbeat
-Evolves into Fletchinder-0 @ 17 (LevelUp) [0]
+Evolves into Fletchinder-0 @ lv17 (LevelUp) [0]
 
 ======
 662 - Fletchinder (Stage: 2)
@@ -42173,7 +42170,7 @@ TRs:
 - [TR85] Work Up
 Armor Tutors:
 - Dual Wingbeat
-Evolves into Talonflame-0 @ 35 (LevelUp) [0]
+Evolves into Talonflame-0 @ lv35 (LevelUp) [0]
 
 ======
 663 - Talonflame (Stage: 2)
@@ -42335,7 +42332,7 @@ TRs:
 Armor Tutors:
 - Coaching
 - Lash Out
-Evolves into Pangoro-0 @ 32 (LevelUpMoveType) [0]
+Evolves into Pangoro-0 @ lv32 (LevelUpMoveType) [0]
 
 ======
 675 - Pangoro (Stage: 2)
@@ -42515,8 +42512,8 @@ TRs:
 - [TR90] Play Rough
 Armor Tutors:
 - Expanding Force
-Evolves into Meowstic-0 @ 25 (LevelUpMale) [0]
-Evolves into Meowstic-1 @ 25 (LevelUpFormFemale1) [0]
+Evolves into Meowstic-0 @ lv25 (LevelUpMale) [0]
+Evolves into Meowstic-1 @ lv25 (LevelUpFormFemale1) [0]
 
 ======
 678 - Meowstic (Stage: 2)
@@ -42756,7 +42753,7 @@ TRs:
 - [TR74] Iron Head
 Armor Tutors:
 None!
-Evolves into Doublade-0 @ 35 (LevelUp) [0]
+Evolves into Doublade-0 @ lv35 (LevelUp) [0]
 
 ======
 680 - Doublade (Stage: 2)
@@ -42819,7 +42816,7 @@ TRs:
 - [TR74] Iron Head
 Armor Tutors:
 None!
-Evolves into Aegislash-0 @ 0 (UseItem) [108]
+Evolves into Aegislash-0 @ lv0 (UseItem) [108]
 
 ======
 681 - Aegislash (Stage: 3)
@@ -43030,7 +43027,7 @@ TRs:
 - [TR92] Dazzling Gleam
 Armor Tutors:
 - Misty Explosion
-Evolves into Aromatisse-0 @ 0 (TradeHeldItem) [647]
+Evolves into Aromatisse-0 @ lv0 (TradeHeldItem) [647]
 
 ======
 683 - Aromatisse (Stage: 2)
@@ -43174,7 +43171,7 @@ TRs:
 - [TR92] Dazzling Gleam
 Armor Tutors:
 - Misty Explosion
-Evolves into Slurpuff-0 @ 0 (TradeHeldItem) [646]
+Evolves into Slurpuff-0 @ lv0 (TradeHeldItem) [646]
 
 ======
 685 - Slurpuff (Stage: 2)
@@ -43322,7 +43319,7 @@ TRs:
 Armor Tutors:
 - Expanding Force
 - Lash Out
-Evolves into Malamar-0 @ 30 (LevelUpInverted) [0]
+Evolves into Malamar-0 @ lv30 (LevelUpInverted) [0]
 
 ======
 687 - Malamar (Stage: 2)
@@ -43490,7 +43487,7 @@ TRs:
 - [TR98] Liquidation
 Armor Tutors:
 None!
-Evolves into Barbaracle-0 @ 39 (LevelUp) [0]
+Evolves into Barbaracle-0 @ lv39 (LevelUp) [0]
 
 ======
 689 - Barbaracle (Stage: 2)
@@ -43656,7 +43653,7 @@ TRs:
 Armor Tutors:
 - Flip Turn
 - Scale Shot
-Evolves into Dragalge-0 @ 48 (LevelUp) [0]
+Evolves into Dragalge-0 @ lv48 (LevelUp) [0]
 
 ======
 691 - Dragalge (Stage: 2)
@@ -43795,7 +43792,7 @@ TRs:
 Armor Tutors:
 - Terrain Pulse
 - Flip Turn
-Evolves into Clawitzer-0 @ 37 (LevelUp) [0]
+Evolves into Clawitzer-0 @ lv37 (LevelUp) [0]
 
 ======
 693 - Clawitzer (Stage: 1)
@@ -43941,7 +43938,7 @@ TRs:
 Armor Tutors:
 - Rising Voltage
 - Scale Shot
-Evolves into Heliolisk-0 @ 0 (UseItem) [80]
+Evolves into Heliolisk-0 @ lv0 (UseItem) [80]
 
 ======
 695 - Heliolisk (Stage: 2)
@@ -44114,7 +44111,7 @@ Armor Tutors:
 - Meteor Beam
 - Scale Shot
 - Lash Out
-Evolves into Tyrantrum-0 @ 39 (LevelUpMorning) [0]
+Evolves into Tyrantrum-0 @ lv39 (LevelUpMorning) [0]
 
 ======
 697 - Tyrantrum (Stage: 2)
@@ -44289,7 +44286,7 @@ TRs:
 - [TR76] Stealth Rock
 Armor Tutors:
 - Meteor Beam
-Evolves into Aurorus-0 @ 39 (LevelUpNight) [0]
+Evolves into Aurorus-0 @ lv39 (LevelUpNight) [0]
 
 ======
 699 - Aurorus (Stage: 1)
@@ -44770,7 +44767,7 @@ TRs:
 - [TR78] Sludge Wave
 Armor Tutors:
 - Skitter Smack
-Evolves into Sliggoo-0 @ 40 (LevelUp) [0]
+Evolves into Sliggoo-0 @ lv40 (LevelUp) [0]
 
 ======
 705 - Sliggoo (Stage: 2)
@@ -44832,7 +44829,7 @@ TRs:
 - [TR78] Sludge Wave
 Armor Tutors:
 - Skitter Smack
-Evolves into Goodra-0 @ 50 (LevelUpWeather) [0]
+Evolves into Goodra-0 @ lv50 (LevelUpWeather) [0]
 
 ======
 706 - Goodra (Stage: 3)
@@ -45071,7 +45068,7 @@ Armor Tutors:
 - Grassy Glide
 - Skitter Smack
 - Poltergeist
-Evolves into Trevenant-0 @ 0 (Trade) [0]
+Evolves into Trevenant-0 @ lv0 (Trade) [0]
 
 ======
 709 - Trevenant (Stage: 2)
@@ -45239,7 +45236,7 @@ Armor Tutors:
 - Grassy Glide
 - Skitter Smack
 - Poltergeist
-Evolves into Gourgeist-0 @ 0 (Trade) [0]
+Evolves into Gourgeist-0 @ lv0 (Trade) [0]
 
 ======
 1116 - Pumpkaboo 1 (Stage: 1)
@@ -45320,7 +45317,7 @@ Armor Tutors:
 - Grassy Glide
 - Skitter Smack
 - Poltergeist
-Evolves into Gourgeist-1 @ 0 (Trade) [0]
+Evolves into Gourgeist-1 @ lv0 (Trade) [0]
 
 ======
 1117 - Pumpkaboo 2 (Stage: 1)
@@ -45401,7 +45398,7 @@ Armor Tutors:
 - Grassy Glide
 - Skitter Smack
 - Poltergeist
-Evolves into Gourgeist-2 @ 0 (Trade) [0]
+Evolves into Gourgeist-2 @ lv0 (Trade) [0]
 
 ======
 1118 - Pumpkaboo 3 (Stage: 1)
@@ -45484,7 +45481,7 @@ Armor Tutors:
 - Grassy Glide
 - Skitter Smack
 - Poltergeist
-Evolves into Gourgeist-3 @ 0 (Trade) [0]
+Evolves into Gourgeist-3 @ lv0 (Trade) [0]
 
 ======
 711 - Gourgeist (Stage: 2)
@@ -45899,7 +45896,7 @@ TRs:
 - [TR75] Stone Edge
 Armor Tutors:
 None!
-Evolves into Avalugg-0 @ 37 (LevelUp) [0]
+Evolves into Avalugg-0 @ lv37 (LevelUp) [0]
 
 ======
 713 - Avalugg (Stage: 2)
@@ -46056,7 +46053,7 @@ TRs:
 - [TR89] Hurricane
 Armor Tutors:
 - Dual Wingbeat
-Evolves into Noivern-0 @ 48 (LevelUp) [0]
+Evolves into Noivern-0 @ lv48 (LevelUp) [0]
 
 ======
 715 - Noivern (Stage: 2)
@@ -47015,7 +47012,7 @@ TRs:
 Armor Tutors:
 - Grassy Glide
 - Dual Wingbeat
-Evolves into Dartrix-0 @ 17 (LevelUp) [0]
+Evolves into Dartrix-0 @ lv17 (LevelUp) [0]
 
 ======
 723 - Dartrix (Stage: 2)
@@ -47079,7 +47076,7 @@ TRs:
 Armor Tutors:
 - Grassy Glide
 - Dual Wingbeat
-Evolves into Decidueye-0 @ 34 (LevelUp) [0]
+Evolves into Decidueye-0 @ lv34 (LevelUp) [0]
 
 ======
 724 - Decidueye (Stage: 3)
@@ -47237,7 +47234,7 @@ TRs:
 - [TR85] Work Up
 Armor Tutors:
 None!
-Evolves into Torracat-0 @ 17 (LevelUp) [0]
+Evolves into Torracat-0 @ lv17 (LevelUp) [0]
 
 ======
 726 - Torracat (Stage: 2)
@@ -47306,7 +47303,7 @@ TRs:
 - [TR85] Work Up
 Armor Tutors:
 None!
-Evolves into Incineroar-0 @ 34 (LevelUp) [0]
+Evolves into Incineroar-0 @ lv34 (LevelUp) [0]
 
 ======
 727 - Incineroar (Stage: 3)
@@ -47483,7 +47480,7 @@ TRs:
 Armor Tutors:
 - Flip Turn
 - Triple Axel
-Evolves into Brionne-0 @ 17 (LevelUp) [0]
+Evolves into Brionne-0 @ lv17 (LevelUp) [0]
 
 ======
 729 - Brionne (Stage: 2)
@@ -47554,7 +47551,7 @@ TRs:
 Armor Tutors:
 - Flip Turn
 - Triple Axel
-Evolves into Primarina-0 @ 34 (LevelUp) [0]
+Evolves into Primarina-0 @ lv34 (LevelUp) [0]
 
 ======
 730 - Primarina (Stage: 3)
@@ -47698,7 +47695,7 @@ TRs:
 Armor Tutors:
 - Rising Voltage
 - Skitter Smack
-Evolves into Charjabug-0 @ 20 (LevelUp) [0]
+Evolves into Charjabug-0 @ lv20 (LevelUp) [0]
 
 ======
 737 - Charjabug (Stage: 2)
@@ -47763,7 +47760,7 @@ TRs:
 Armor Tutors:
 - Rising Voltage
 - Skitter Smack
-Evolves into Vikavolt-0 @ 0 (UseItem) [83]
+Evolves into Vikavolt-0 @ lv0 (UseItem) [83]
 
 ======
 738 - Vikavolt (Stage: 3)
@@ -47917,7 +47914,7 @@ TRs:
 - [TR92] Dazzling Gleam
 Armor Tutors:
 - Dual Wingbeat
-Evolves into Ribombee-0 @ 25 (LevelUp) [0]
+Evolves into Ribombee-0 @ lv25 (LevelUp) [0]
 
 ======
 743 - Ribombee (Stage: 2)
@@ -48063,8 +48060,8 @@ TRs:
 - [TR90] Play Rough
 Armor Tutors:
 None!
-Evolves into Lycanroc-0 @ 25 (LevelUpMorning) [0]
-Evolves into Lycanroc-1 @ 25 (LevelUpNight) [0]
+Evolves into Lycanroc-0 @ lv25 (LevelUpMorning) [0]
+Evolves into Lycanroc-1 @ lv25 (LevelUpNight) [0]
 
 ======
 1131 - Rockruff 1 (Stage: 1)
@@ -48132,7 +48129,7 @@ TRs:
 - [TR90] Play Rough
 Armor Tutors:
 None!
-Evolves into Lycanroc-2 @ 25 (LevelUpDusk) [0]
+Evolves into Lycanroc-2 @ lv25 (LevelUpDusk) [0]
 
 ======
 745 - Lycanroc (Stage: 2)
@@ -48600,7 +48597,7 @@ TRs:
 - [TR98] Liquidation
 Armor Tutors:
 None!
-Evolves into Toxapex-0 @ 38 (LevelUp) [0]
+Evolves into Toxapex-0 @ lv38 (LevelUp) [0]
 
 ======
 748 - Toxapex (Stage: 2)
@@ -48744,7 +48741,7 @@ TRs:
 - [TR94] High Horsepower
 Armor Tutors:
 None!
-Evolves into Mudsdale-0 @ 30 (LevelUp) [0]
+Evolves into Mudsdale-0 @ lv30 (LevelUp) [0]
 
 ======
 750 - Mudsdale (Stage: 2)
@@ -48886,7 +48883,7 @@ TRs:
 - [TR98] Liquidation
 Armor Tutors:
 - Skitter Smack
-Evolves into Araquanid-0 @ 22 (LevelUp) [0]
+Evolves into Araquanid-0 @ lv22 (LevelUp) [0]
 
 ======
 752 - Araquanid (Stage: 2)
@@ -49023,7 +49020,7 @@ TRs:
 - [TR77] Grass Knot
 Armor Tutors:
 - Grassy Glide
-Evolves into Lurantis-0 @ 34 (LevelUpMorning) [0]
+Evolves into Lurantis-0 @ lv34 (LevelUpMorning) [0]
 
 ======
 754 - Lurantis (Stage: 2)
@@ -49167,7 +49164,7 @@ TRs:
 - [TR96] Pollen Puff
 Armor Tutors:
 None!
-Evolves into Shiinotic-0 @ 24 (LevelUp) [0]
+Evolves into Shiinotic-0 @ lv24 (LevelUp) [0]
 
 ======
 756 - Shiinotic (Stage: 2)
@@ -49313,7 +49310,7 @@ TRs:
 Armor Tutors:
 - Skitter Smack
 - Scale Shot
-Evolves into Salazzle-0 @ 33 (LevelUpFemale) [0]
+Evolves into Salazzle-0 @ lv33 (LevelUpFemale) [0]
 
 ======
 758 - Salazzle (Stage: 2)
@@ -49476,7 +49473,7 @@ TRs:
 - [TR85] Work Up
 Armor Tutors:
 - Coaching
-Evolves into Bewear-0 @ 27 (LevelUp) [0]
+Evolves into Bewear-0 @ lv27 (LevelUp) [0]
 
 ======
 760 - Bewear (Stage: 2)
@@ -49622,7 +49619,7 @@ TRs:
 - [TR92] Dazzling Gleam
 Armor Tutors:
 - Grassy Glide
-Evolves into Steenee-0 @ 18 (LevelUp) [0]
+Evolves into Steenee-0 @ lv18 (LevelUp) [0]
 
 ======
 762 - Steenee (Stage: 2)
@@ -49689,7 +49686,7 @@ TRs:
 Armor Tutors:
 - Grassy Glide
 - Triple Axel
-Evolves into Tsareena-0 @ 0 (LevelUpKnowMove) [23]
+Evolves into Tsareena-0 @ lv0 (LevelUpKnowMove) [23]
 
 ======
 763 - Tsareena (Stage: 3)
@@ -50092,7 +50089,7 @@ TRs:
 - [TR84] Scald
 Armor Tutors:
 - Skitter Smack
-Evolves into Golisopod-0 @ 30 (LevelUp) [0]
+Evolves into Golisopod-0 @ lv30 (LevelUp) [0]
 
 ======
 768 - Golisopod (Stage: 2)
@@ -50260,7 +50257,7 @@ TRs:
 Armor Tutors:
 - Scorching Sands
 - Poltergeist
-Evolves into Palossand-0 @ 42 (LevelUp) [0]
+Evolves into Palossand-0 @ lv42 (LevelUp) [0]
 
 ======
 770 - Palossand (Stage: 2)
@@ -50452,7 +50449,7 @@ TRs:
 - [TR85] Work Up
 Armor Tutors:
 - Terrain Pulse
-Evolves into Silvally-0 @ 0 (LevelUpFriendship) [0]
+Evolves into Silvally-0 @ lv0 (LevelUpFriendship) [0]
 
 ======
 773 - Silvally (Stage: 3)
@@ -52757,7 +52754,7 @@ TRs:
 - [TR85] Work Up
 Armor Tutors:
 - Scale Shot
-Evolves into Hakamo-o-0 @ 35 (LevelUp) [0]
+Evolves into Hakamo-o-0 @ lv35 (LevelUp) [0]
 
 ======
 783 - Hakamo-o (Stage: 2)
@@ -52841,7 +52838,7 @@ TRs:
 Armor Tutors:
 - Coaching
 - Scale Shot
-Evolves into Kommo-o-0 @ 45 (LevelUp) [0]
+Evolves into Kommo-o-0 @ lv45 (LevelUp) [0]
 
 ======
 784 - Kommo-o (Stage: 3)
@@ -53304,7 +53301,7 @@ TRs:
 None!
 Armor Tutors:
 None!
-Evolves into Cosmoem-0 @ 43 (LevelUp) [0]
+Evolves into Cosmoem-0 @ lv43 (LevelUp) [0]
 
 ======
 790 - Cosmoem (Stage: 2)
@@ -53331,8 +53328,8 @@ TRs:
 - [TR44] Cosmic Power
 Armor Tutors:
 None!
-Evolves into Solgaleo-0 @ 53 (LevelUpVersion) [44]
-Evolves into Lunala-0 @ 53 (LevelUpVersion) [45]
+Evolves into Solgaleo-0 @ lv53 (LevelUpVersion) [44]
+Evolves into Lunala-0 @ lv53 (LevelUpVersion) [45]
 
 ======
 791 - Solgaleo (Stage: 3)
@@ -54638,7 +54635,7 @@ TRs:
 - [TR91] Venom Drench
 Armor Tutors:
 None!
-Evolves into Naganadel-0 @ 0 (LevelUpKnowMove) [406]
+Evolves into Naganadel-0 @ lv0 (LevelUpKnowMove) [406]
 
 ======
 804 - Naganadel (Stage: 3)
@@ -55161,7 +55158,7 @@ TRs:
 - [TR85] Work Up
 Armor Tutors:
 - Grassy Glide
-Evolves into Thwackey-0 @ 16 (LevelUp) [0]
+Evolves into Thwackey-0 @ lv16 (LevelUp) [0]
 
 ======
 811 - Thwackey (Stage: 2)
@@ -55228,7 +55225,7 @@ TRs:
 - [TR85] Work Up
 Armor Tutors:
 - Grassy Glide
-Evolves into Rillaboom-0 @ 35 (LevelUp) [0]
+Evolves into Rillaboom-0 @ lv35 (LevelUp) [0]
 
 ======
 812 - Rillaboom (Stage: 3)
@@ -55392,7 +55389,7 @@ TRs:
 - [TR85] Work Up
 Armor Tutors:
 None!
-Evolves into Raboot-0 @ 16 (LevelUp) [0]
+Evolves into Raboot-0 @ lv16 (LevelUp) [0]
 
 ======
 814 - Raboot (Stage: 2)
@@ -55461,7 +55458,7 @@ TRs:
 - [TR85] Work Up
 Armor Tutors:
 None!
-Evolves into Cinderace-0 @ 35 (LevelUp) [0]
+Evolves into Cinderace-0 @ lv35 (LevelUp) [0]
 
 ======
 815 - Cinderace (Stage: 3)
@@ -55611,7 +55608,7 @@ TRs:
 - [TR98] Liquidation
 Armor Tutors:
 None!
-Evolves into Drizzile-0 @ 16 (LevelUp) [0]
+Evolves into Drizzile-0 @ lv16 (LevelUp) [0]
 
 ======
 817 - Drizzile (Stage: 2)
@@ -55670,7 +55667,7 @@ TRs:
 - [TR98] Liquidation
 Armor Tutors:
 None!
-Evolves into Inteleon-0 @ 35 (LevelUp) [0]
+Evolves into Inteleon-0 @ lv35 (LevelUp) [0]
 
 ======
 818 - Inteleon (Stage: 3)
@@ -55820,7 +55817,7 @@ TRs:
 - [TR59] Seed Bomb
 Armor Tutors:
 None!
-Evolves into Greedent-0 @ 24 (LevelUp) [0]
+Evolves into Greedent-0 @ lv24 (LevelUp) [0]
 
 ======
 820 - Greedent (Stage: 2)
@@ -55967,7 +55964,7 @@ TRs:
 - [TR85] Work Up
 Armor Tutors:
 - Dual Wingbeat
-Evolves into Corvisquire-0 @ 18 (LevelUp) [0]
+Evolves into Corvisquire-0 @ lv18 (LevelUp) [0]
 
 ======
 822 - Corvisquire (Stage: 2)
@@ -56028,7 +56025,7 @@ TRs:
 - [TR85] Work Up
 Armor Tutors:
 - Dual Wingbeat
-Evolves into Corviknight-0 @ 38 (LevelUp) [0]
+Evolves into Corviknight-0 @ lv38 (LevelUp) [0]
 
 ======
 823 - Corviknight (Stage: 3)
@@ -56137,7 +56134,7 @@ TRs:
 None!
 Armor Tutors:
 None!
-Evolves into Dottler-0 @ 10 (LevelUp) [0]
+Evolves into Dottler-0 @ lv10 (LevelUp) [0]
 
 ======
 825 - Dottler (Stage: 2)
@@ -56206,7 +56203,7 @@ TRs:
 - [TR99] Body Press
 Armor Tutors:
 - Expanding Force
-Evolves into Orbeetle-0 @ 30 (LevelUp) [0]
+Evolves into Orbeetle-0 @ lv30 (LevelUp) [0]
 
 ======
 826 - Orbeetle (Stage: 3)
@@ -56353,7 +56350,7 @@ TRs:
 - [TR90] Play Rough
 Armor Tutors:
 - Lash Out
-Evolves into Thievul-0 @ 18 (LevelUp) [0]
+Evolves into Thievul-0 @ lv18 (LevelUp) [0]
 
 ======
 828 - Thievul (Stage: 2)
@@ -56491,7 +56488,7 @@ TRs:
 - [TR96] Pollen Puff
 Armor Tutors:
 - Grassy Glide
-Evolves into Eldegoss-0 @ 20 (LevelUp) [0]
+Evolves into Eldegoss-0 @ lv20 (LevelUp) [0]
 
 ======
 830 - Eldegoss (Stage: 2)
@@ -56609,7 +56606,7 @@ TRs:
 - [TR86] Wild Charge
 Armor Tutors:
 - Grassy Glide
-Evolves into Dubwool-0 @ 24 (LevelUp) [0]
+Evolves into Dubwool-0 @ lv24 (LevelUp) [0]
 
 ======
 832 - Dubwool (Stage: 2)
@@ -56728,7 +56725,7 @@ TRs:
 Armor Tutors:
 - Skitter Smack
 - Scale Shot
-Evolves into Drednaw-0 @ 22 (LevelUp) [0]
+Evolves into Drednaw-0 @ lv22 (LevelUp) [0]
 
 ======
 834 - Drednaw (Stage: 2)
@@ -56886,7 +56883,7 @@ TRs:
 - [TR90] Play Rough
 Armor Tutors:
 - Rising Voltage
-Evolves into Boltund-0 @ 25 (LevelUp) [0]
+Evolves into Boltund-0 @ lv25 (LevelUp) [0]
 
 ======
 836 - Boltund (Stage: 2)
@@ -57017,7 +57014,7 @@ TRs:
 - [TR88] Heat Crash
 Armor Tutors:
 - Meteor Beam
-Evolves into Carkol-0 @ 18 (LevelUp) [0]
+Evolves into Carkol-0 @ lv18 (LevelUp) [0]
 
 ======
 838 - Carkol (Stage: 2)
@@ -57089,7 +57086,7 @@ TRs:
 Armor Tutors:
 - Scorching Sands
 - Meteor Beam
-Evolves into Coalossal-0 @ 34 (LevelUp) [0]
+Evolves into Coalossal-0 @ lv34 (LevelUp) [0]
 
 ======
 839 - Coalossal (Stage: 0)
@@ -57203,8 +57200,8 @@ TRs:
 None!
 Armor Tutors:
 - Grassy Glide
-Evolves into Flapple-0 @ 0 (UseItem) [1117]
-Evolves into Appletun-0 @ 0 (UseItem) [1116]
+Evolves into Flapple-0 @ lv0 (UseItem) [1117]
+Evolves into Appletun-0 @ lv0 (UseItem) [1116]
 
 ======
 841 - Flapple (Stage: 2)
@@ -57410,7 +57407,7 @@ Armor Tutors:
 - Scorching Sands
 - Skitter Smack
 - Scale Shot
-Evolves into Sandaconda-0 @ 36 (LevelUp) [0]
+Evolves into Sandaconda-0 @ lv36 (LevelUp) [0]
 
 ======
 844 - Sandaconda (Stage: 2)
@@ -57775,7 +57772,7 @@ TRs:
 - [TR98] Liquidation
 Armor Tutors:
 - Scale Shot
-Evolves into Barraskewda-0 @ 26 (LevelUp) [0]
+Evolves into Barraskewda-0 @ lv26 (LevelUp) [0]
 
 ======
 847 - Barraskewda (Stage: 2)
@@ -57884,8 +57881,8 @@ TRs:
 - [TR30] Encore
 Armor Tutors:
 None!
-Evolves into Toxtricity-0 @ 30 (LevelUpNatureAmped) [0]
-Evolves into Toxtricity-1 @ 30 (LevelUpNatureLowKey) [0]
+Evolves into Toxtricity-0 @ lv30 (LevelUpNatureAmped) [0]
+Evolves into Toxtricity-1 @ lv30 (LevelUpNatureLowKey) [0]
 
 ======
 849 - Toxtricity (Stage: 2)
@@ -58123,7 +58120,7 @@ TRs:
 Armor Tutors:
 - Scorching Sands
 - Skitter Smack
-Evolves into Centiskorch-0 @ 28 (LevelUp) [0]
+Evolves into Centiskorch-0 @ lv28 (LevelUp) [0]
 
 ======
 851 - Centiskorch (Stage: 2)
@@ -58262,7 +58259,7 @@ TRs:
 - [TR98] Liquidation
 Armor Tutors:
 - Coaching
-Evolves into Grapploct-0 @ 0 (LevelUpKnowMove) [269]
+Evolves into Grapploct-0 @ lv0 (LevelUpKnowMove) [269]
 
 ======
 853 - Grapploct (Stage: 2)
@@ -58400,7 +58397,7 @@ TRs:
 - [TR83] Ally Switch
 Armor Tutors:
 - Poltergeist
-Evolves into Polteageist-0 @ 0 (UseItem) [1253]
+Evolves into Polteageist-0 @ lv0 (UseItem) [1253]
 
 ======
 1172 - Sinistea 1 (Stage: 1)
@@ -58461,7 +58458,7 @@ TRs:
 - [TR83] Ally Switch
 Armor Tutors:
 - Poltergeist
-Evolves into Polteageist-1 @ 0 (UseItem) [1254]
+Evolves into Polteageist-1 @ lv0 (UseItem) [1254]
 
 ======
 855 - Polteageist (Stage: 2)
@@ -58666,7 +58663,7 @@ TRs:
 - [TR92] Dazzling Gleam
 Armor Tutors:
 - Expanding Force
-Evolves into Hattrem-0 @ 32 (LevelUp) [0]
+Evolves into Hattrem-0 @ lv32 (LevelUp) [0]
 
 ======
 857 - Hattrem (Stage: 2)
@@ -58731,7 +58728,7 @@ TRs:
 - [TR92] Dazzling Gleam
 Armor Tutors:
 - Expanding Force
-Evolves into Hatterene-0 @ 42 (LevelUp) [0]
+Evolves into Hatterene-0 @ lv42 (LevelUp) [0]
 
 ======
 858 - Hatterene (Stage: 3)
@@ -58878,7 +58875,7 @@ TRs:
 Armor Tutors:
 - Burning Jealousy
 - Lash Out
-Evolves into Morgrem-0 @ 32 (LevelUp) [0]
+Evolves into Morgrem-0 @ lv32 (LevelUp) [0]
 
 ======
 860 - Morgrem (Stage: 2)
@@ -58951,7 +58948,7 @@ TRs:
 Armor Tutors:
 - Burning Jealousy
 - Lash Out
-Evolves into Grimmsnarl-0 @ 42 (LevelUp) [0]
+Evolves into Grimmsnarl-0 @ lv42 (LevelUp) [0]
 
 ======
 861 - Grimmsnarl (Stage: 3)
@@ -59335,7 +59332,7 @@ Armor Tutors:
 - Poltergeist
 
 ======
-865 - Sirfetch’d (Stage: 2)
+865 - Sirfetch'd (Stage: 2)
 ======
 Galar Dex: #219
 Base Stats: 62.135.95.68.82.65 (BST: 507)
@@ -59675,15 +59672,15 @@ TRs:
 - [TR92] Dazzling Gleam
 Armor Tutors:
 None!
-Evolves into Alcremie-0 @ 0 (Spin) [0]
-Evolves into Alcremie-1 @ 0 (Spin) [0]
-Evolves into Alcremie-2 @ 0 (Spin) [0]
-Evolves into Alcremie-3 @ 0 (Spin) [0]
-Evolves into Alcremie-4 @ 0 (Spin) [0]
-Evolves into Alcremie-5 @ 0 (Spin) [0]
-Evolves into Alcremie-6 @ 0 (Spin) [0]
-Evolves into Alcremie-7 @ 0 (Spin) [0]
-Evolves into Alcremie-8 @ 0 (Spin) [0]
+Evolves into Alcremie-0 @ lv0 (Spin) [0]
+Evolves into Alcremie-1 @ lv0 (Spin) [0]
+Evolves into Alcremie-2 @ lv0 (Spin) [0]
+Evolves into Alcremie-3 @ lv0 (Spin) [0]
+Evolves into Alcremie-4 @ lv0 (Spin) [0]
+Evolves into Alcremie-5 @ lv0 (Spin) [0]
+Evolves into Alcremie-6 @ lv0 (Spin) [0]
+Evolves into Alcremie-7 @ lv0 (Spin) [0]
+Evolves into Alcremie-8 @ lv0 (Spin) [0]
 
 ======
 869 - Alcremie (Stage: 2)
@@ -60517,7 +60514,7 @@ TRs:
 - [TR61] Bug Buzz
 Armor Tutors:
 - Skitter Smack
-Evolves into Frosmoth-0 @ 0 (LevelUpFriendshipNight) [0]
+Evolves into Frosmoth-0 @ lv0 (LevelUpFriendshipNight) [0]
 
 ======
 873 - Frosmoth (Stage: 2)
@@ -61226,7 +61223,7 @@ TRs:
 - [TR99] Body Press
 Armor Tutors:
 - Steel Roller
-Evolves into Copperajah-0 @ 34 (LevelUp) [0]
+Evolves into Copperajah-0 @ lv34 (LevelUp) [0]
 
 ======
 879 - Copperajah (Stage: 2)
@@ -61733,7 +61730,7 @@ TRs:
 - [TR29] Baton Pass
 Armor Tutors:
 None!
-Evolves into Drakloak-0 @ 50 (LevelUp) [0]
+Evolves into Drakloak-0 @ lv50 (LevelUp) [0]
 
 ======
 886 - Drakloak (Stage: 2)
@@ -61813,7 +61810,7 @@ TRs:
 - [TR97] Psychic Fangs
 Armor Tutors:
 None!
-Evolves into Dragapult-0 @ 60 (LevelUp) [0]
+Evolves into Dragapult-0 @ lv60 (LevelUp) [0]
 
 ======
 887 - Dragapult (Stage: 3)
@@ -62435,8 +62432,8 @@ TRs:
 - [TR85] Work Up
 Armor Tutors:
 - Coaching
-Evolves into Urshifu-0 @ 0 (TowerOfDarkness) [0]
-Evolves into Urshifu-1 @ 0 (TowerOfWaters) [0]
+Evolves into Urshifu-0 @ lv0 (TowerOfDarkness) [0]
+Evolves into Urshifu-1 @ lv0 (TowerOfWaters) [0]
 
 ======
 892 - Urshifu (Stage: 3)
