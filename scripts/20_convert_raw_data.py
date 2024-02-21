@@ -113,11 +113,7 @@ def rowsToJsonArray(raw_data):
             curr_index = 0
 
             curr["pid"] = (
-                [
-                    row["pid"]
-                    for row in new_data
-                    if row["Name"] == curr["Name"].split("-")[0]
-                ][0]
+                [row["pid"] for row in new_data if row["Name"] == curr["Name"].split("-")[0]][0]
                 if "-" in curr["Name"]
                 else curr["pid"]
             )
@@ -141,9 +137,7 @@ def rowsToJsonArray(raw_data):
                 curr["CrownDex"] = int(curr["CrownDex"][1:])
 
             curr["Type"] = [type_dict[t] for t in curr["Type"].split(" / ")]
-            curr["EggGroup"] = [
-                egg_group_dict[t] for t in curr["EggGroup"].split(" / ")
-            ]
+            curr["EggGroup"] = [egg_group_dict[t] for t in curr["EggGroup"].split(" / ")]
 
             abilities_ = []
             for ability in curr["Abilities"].split(" | "):
@@ -157,9 +151,7 @@ def rowsToJsonArray(raw_data):
             if abilities_[0] != abilities_[2]:
                 curr["AbilityHide"] = abilities_[2]
 
-            curr["BaseStats"] = [
-                int(s) for s in curr["BaseStats"].split(" (")[0].split(".")
-            ]
+            curr["BaseStats"] = [int(s) for s in curr["BaseStats"].split(" (")[0].split(".")]
 
             curr["EVYield"] = [int(s) for s in curr["EVYield"].split(".")]
             curr["GenderRatio"] = int(curr["GenderRatio"])
@@ -311,7 +303,7 @@ def addTags(cursor):
 
 
 def init_db():
-    conn = sqlite3.connect("rawdata/mapping/sv.db")
+    conn = sqlite3.connect("rawdata/mapping/galar.db")
     conn.row_factory = dict_factory
 
     cursor = conn.cursor()
@@ -319,6 +311,7 @@ def init_db():
     cursor.execute("DELETE FROM pokemons;")
     cursor.execute("DELETE FROM pokemon_moves;")
     cursor.execute("DELETE FROM pokemon_TMs;")
+    cursor.execute("DELETE FROM pokemon_TRs;")
     cursor.execute("DELETE FROM pokemon_evolves;")
     cursor.execute("DELETE FROM pokemon_tags;")
     conn.commit()
@@ -356,14 +349,14 @@ if __name__ == "__main__":
     with open(f"rawdata/{version}_zh.json", "w") as output_file:
         output_file.write(json.dumps(new_data, indent=4, ensure_ascii=False))
 
-    exit()
-
     conn, cursor = init_db()
 
     for data in new_data:
         if "-" in data["Name"] and data["Name"] not in altForm_dict:
             print(data["Name"])
             continue
+
+        continue
 
         link = data["link"]
 
@@ -418,11 +411,7 @@ if __name__ == "__main__":
                     if "面影輝映" == data["Abilities"][0]
                     else ability_id_dict[data["Abilities"][0]]
                 ),
-                (
-                    ability_id_dict[data["Abilities"][1]]
-                    if len(data["Abilities"]) > 1
-                    else None
-                ),
+                (ability_id_dict[data["Abilities"][1]] if len(data["Abilities"]) > 1 else None),
                 ability_id_dict[data["AbilityHide"]] if "AbilityHide" in data else None,
                 data["BaseStats"][0],
                 data["BaseStats"][1],
@@ -450,6 +439,8 @@ if __name__ == "__main__":
         addEggMoves(data, cursor)
         addReminder(data, cursor)
         addEvolves(data, cursor)
+
+    exit()
 
     addTags(cursor)
     conn.commit()
@@ -809,9 +800,7 @@ WHERE
                     )
                 else:
                     moveMap["beforeEvolve"].append(move_)
-                    print(
-                        move["pm_nameZh"], move["pm_altForm"], move["nameZh"], "跨兩階"
-                    )
+                    print(move["pm_nameZh"], move["pm_altForm"], move["nameZh"], "跨兩階")
 
         if row["link"] in evolveInvMap:
             for tm in cursor.execute(
@@ -1027,9 +1016,7 @@ ORDER BY
                     if key_.startswith("type"):
                         row["evolves"]["from"]["types"] = [evolve["from_type_1"]]
                         if evolve["from_type_2"] != None:
-                            row["evolves"]["from"]["types"].append(
-                                evolve["from_type_2"]
-                            )
+                            row["evolves"]["from"]["types"].append(evolve["from_type_2"])
                     else:
                         row["evolves"]["from"][key_] = evolve[key]
 
