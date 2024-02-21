@@ -52,7 +52,7 @@ def rowsToJsonArray(raw_data):
             continue
 
         if curr_index == 2:
-            print(line)
+            # print(line)
             line = line.split(" (")[0].split(" - ")
             curr["pid"] = int(line[0])
             curr["Name"] = line[1].replace(" ", "-")
@@ -94,7 +94,12 @@ def rowsToJsonArray(raw_data):
             condition = condition.replace(method, evolutionMethod_dict[method])
             if "<ITEM>" in condition:
                 if item.isnumeric():
-                    condition = condition.replace("<ITEM>", item)
+                    if "Item" in method or "LevelUpKnowMove" in method:
+                        condition = condition.replace(
+                            "<ITEM>", evolutionItem_dict[item]
+                        )
+                    else:
+                        condition = condition.replace("<ITEM>", item)
                 else:
                     condition = condition.replace("<ITEM>", evolutionItem_dict[item])
             condition = condition.split(" [")[0]
@@ -113,7 +118,11 @@ def rowsToJsonArray(raw_data):
             curr_index = 0
 
             curr["pid"] = (
-                [row["pid"] for row in new_data if row["Name"] == curr["Name"].split("-")[0]][0]
+                [
+                    row["pid"]
+                    for row in new_data
+                    if row["Name"] == curr["Name"].split("-")[0]
+                ][0]
                 if "-" in curr["Name"]
                 else curr["pid"]
             )
@@ -137,7 +146,9 @@ def rowsToJsonArray(raw_data):
                 curr["CrownDex"] = int(curr["CrownDex"][1:])
 
             curr["Type"] = [type_dict[t] for t in curr["Type"].split(" / ")]
-            curr["EggGroup"] = [egg_group_dict[t] for t in curr["EggGroup"].split(" / ")]
+            curr["EggGroup"] = [
+                egg_group_dict[t] for t in curr["EggGroup"].split(" / ")
+            ]
 
             abilities_ = []
             for ability in curr["Abilities"].split(" | "):
@@ -151,7 +162,9 @@ def rowsToJsonArray(raw_data):
             if abilities_[0] != abilities_[2]:
                 curr["AbilityHide"] = abilities_[2]
 
-            curr["BaseStats"] = [int(s) for s in curr["BaseStats"].split(" (")[0].split(".")]
+            curr["BaseStats"] = [
+                int(s) for s in curr["BaseStats"].split(" (")[0].split(".")
+            ]
 
             curr["EVYield"] = [int(s) for s in curr["EVYield"].split(".")]
             curr["GenderRatio"] = int(curr["GenderRatio"])
@@ -258,7 +271,7 @@ def addTRLean(data, cursor):
     if "TRs" in data:
         for move in data["TRs"]:
             cursor.execute(
-                f"INSERT INTO pokemon_TMs (pokemon_link, tm_id) VALUES (?, ?)",
+                f"INSERT INTO pokemon_TRs (pokemon_link, tr_id) VALUES (?, ?)",
                 (link, int(move["tr"].replace("TR", ""))),
             )
 
@@ -269,6 +282,15 @@ def addEggMoves(data, cursor):
             cursor.execute(
                 f"INSERT INTO pokemon_moves (pokemon_link, move_id, level) VALUES (?, ?, ?)",
                 (link, move_id_dict[move], -1),
+            )
+
+
+def addArmorTutorsMoves(data, cursor):
+    if "ArmorTutors" in data:
+        for move in data["ArmorTutors"]:
+            cursor.execute(
+                f"INSERT INTO pokemon_tutors (pokemon_link, move_id) VALUES (?, ?)",
+                (link, move_id_dict[move]),
             )
 
 
@@ -312,6 +334,7 @@ def init_db():
     cursor.execute("DELETE FROM pokemon_moves;")
     cursor.execute("DELETE FROM pokemon_TMs;")
     cursor.execute("DELETE FROM pokemon_TRs;")
+    cursor.execute("DELETE FROM pokemon_Tutors;")
     cursor.execute("DELETE FROM pokemon_evolves;")
     cursor.execute("DELETE FROM pokemon_tags;")
     conn.commit()
@@ -356,21 +379,15 @@ if __name__ == "__main__":
             print(data["Name"])
             continue
 
-        continue
-
         link = data["link"]
-
-        if "面影輝映" == data["Abilities"][0]:
-            data["Kitakami"] = 200
 
         columns = [
             "pid",
             "link",
             "altForm",
-            "paldea",
-            "kitakami",
-            "blueberry",
-            "hisui",
+            "galar",
+            "armor",
+            "crown",
             "type_1",
             "type_2",
             "abilitiy_1",
@@ -400,18 +417,17 @@ if __name__ == "__main__":
                 data["pid"],
                 data["link"],
                 altForm_dict[data["Name"]] if data["Name"] in altForm_dict else None,
-                data["Paldea"] if "Paldea" in data else None,
-                data["Kitakami"] if "Kitakami" in data else None,
-                data["Blueberry"] if "Blueberry" in data else None,
-                data["Hisui"] if "Hisui" in data else None,
+                data["GalarDex"] if "GalarDex" in data else None,
+                data["ArmorDex"] if "ArmorDex" in data else None,
+                data["CrownDex"] if "CrownDex" in data else None,
                 data["Type"][0],
                 data["Type"][1] if len(data["Type"]) > 1 else None,
+                ability_id_dict[data["Abilities"][0]],
                 (
-                    int(data["Name"].split("-")[1]) + 297
-                    if "面影輝映" == data["Abilities"][0]
-                    else ability_id_dict[data["Abilities"][0]]
+                    ability_id_dict[data["Abilities"][1]]
+                    if len(data["Abilities"]) > 1
+                    else None
                 ),
-                (ability_id_dict[data["Abilities"][1]] if len(data["Abilities"]) > 1 else None),
                 ability_id_dict[data["AbilityHide"]] if "AbilityHide" in data else None,
                 data["BaseStats"][0],
                 data["BaseStats"][1],
@@ -432,18 +448,19 @@ if __name__ == "__main__":
             ),
         )
 
-        # conn.commit()
+        conn.commit()
 
         addLevelUpMoves(data, cursor)
         addTMLean(data, cursor)
+        addTRLean(data, cursor)
+        addArmorTutorsMoves(data, cursor)
         addEggMoves(data, cursor)
         addReminder(data, cursor)
         addEvolves(data, cursor)
 
-    exit()
-
-    addTags(cursor)
+    # addTags(cursor)
     conn.commit()
+    exit()
 
     sourceMap = {}
     eggMoveList = []
@@ -800,7 +817,9 @@ WHERE
                     )
                 else:
                     moveMap["beforeEvolve"].append(move_)
-                    print(move["pm_nameZh"], move["pm_altForm"], move["nameZh"], "跨兩階")
+                    print(
+                        move["pm_nameZh"], move["pm_altForm"], move["nameZh"], "跨兩階"
+                    )
 
         if row["link"] in evolveInvMap:
             for tm in cursor.execute(
@@ -1016,7 +1035,9 @@ ORDER BY
                     if key_.startswith("type"):
                         row["evolves"]["from"]["types"] = [evolve["from_type_1"]]
                         if evolve["from_type_2"] != None:
-                            row["evolves"]["from"]["types"].append(evolve["from_type_2"])
+                            row["evolves"]["from"]["types"].append(
+                                evolve["from_type_2"]
+                            )
                     else:
                         row["evolves"]["from"][key_] = evolve[key]
 

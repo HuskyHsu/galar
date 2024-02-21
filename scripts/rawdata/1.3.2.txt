@@ -38347,7 +38347,7 @@ TRs:
 - [TR65] Energy Ball
 Armor Tutors:
 - Skitter Smack
-Evolves into Accelgor-0 @ lv0 (TradeSpecies) [0]
+Evolves into Accelgor-0 @ lv0 (TradeSpecies2) [0]
 
 ======
 617 - Accelgor (Stage: 2)
