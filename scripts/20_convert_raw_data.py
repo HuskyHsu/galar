@@ -285,6 +285,47 @@ def addEggMoves(data, cursor):
             )
 
 
+def fillingEggMoves(cursor):
+    sourceMap = {}
+    eggMoveList = []
+    for row in cursor.execute(
+        """
+SELECT
+	*
+FROM
+	pokemon_moves
+WHERE
+	pokemon_moves.level = - 1
+"""
+    ):
+        eggMoveList.append(row)
+
+    for row in eggMoveList:
+        if not row["pokemon_link"] in sourceMap:
+            sourceMap[row["pokemon_link"]] = []
+            for row_ in cursor.execute(
+                """
+SELECT
+	pokemons.link
+FROM
+	pokemons
+WHERE
+	pokemons.source = ?
+	AND pokemons.link != pokemons.source;
+        """,
+                (row["pokemon_link"],),
+            ):
+                sourceMap[row["pokemon_link"]].append(row_["link"])
+
+    for row in eggMoveList:
+        sourceList = sourceMap[row["pokemon_link"]]
+        for pm in sourceList:
+            cursor.execute(
+                f"INSERT INTO pokemon_moves (pokemon_link, move_id, level) VALUES (?, ?, ?)",
+                (pm, row["move_id"], -1),
+            )
+
+
 def addArmorTutorsMoves(data, cursor):
     if "ArmorTutors" in data:
         for move in data["ArmorTutors"]:
@@ -460,48 +501,8 @@ if __name__ == "__main__":
 
     # addTags(cursor)
     conn.commit()
-    exit()
 
-    sourceMap = {}
-    eggMoveList = []
-    for row in cursor.execute(
-        """
-SELECT
-	*
-FROM
-	pokemon_moves
-WHERE
-	pokemon_moves.level = - 1
-"""
-    ):
-        eggMoveList.append(row)
-
-    for row in eggMoveList:
-        if not row["pokemon_link"] in sourceMap:
-            sourceMap[row["pokemon_link"]] = []
-            for row_ in cursor.execute(
-                """
-SELECT
-	pokemons.link
-FROM
-	pokemons
-WHERE
-	pokemons.source = ?
-	AND pokemons.link != pokemons.source;
-        """,
-                (row["pokemon_link"],),
-            ):
-                sourceMap[row["pokemon_link"]].append(row_["link"])
-
-    sourceMap["216"].append("901-1")
-    for row in eggMoveList:
-        sourceList = sourceMap[row["pokemon_link"]]
-        for pm in sourceList:
-            cursor.execute(
-                f"INSERT INTO pokemon_moves (pokemon_link, move_id, level) VALUES (?, ?, ?)",
-                (pm, row["move_id"], -1),
-            )
-
+    fillingEggMoves(cursor)
     conn.commit()
 
     new_data = []
@@ -510,10 +511,9 @@ WHERE
 SELECT
 	pokemons.pid,
 	pokemons.link,
-	pokemons.paldea,
-	pokemons.kitakami,
-    pokemons.blueberry,
-	pokemons.hisui,
+	pokemons.galar,
+	pokemons.armor,
+    pokemons.crown,
 	names.nameZh,
 	names.nameJp,
 	names.nameEn,
@@ -619,8 +619,8 @@ ORDER BY
             "levelingUps": [],
             "eggMoves": [],
             "TMs": [],
-            "beforeEvolve": [],
-            "beforeEvolveTMs": [],
+            "TRs": [],
+            "tutors": [],
         }
         for move in cursor.execute(
             """
@@ -646,7 +646,6 @@ ORDER BY
             """
 SELECT
 	TMs.pid as TMPid,
-    TMs.leaguePoint,
 	moves.*
 FROM
 	pokemon_TMs
@@ -661,342 +660,39 @@ ORDER BY
         ):
             moveMap["TMs"].append(move)
 
-        for tm in moveMap["TMs"]:
-            tm["materials"] = []
-            for material in cursor.execute(
-                """
+        for move in cursor.execute(
+            """
 SELECT
-	names.nameZh || '的' || TM_materials.part AS material,
-	TM_materials.count,
-	TM_materials.pm_source AS pm
-FROM
-	TM_materials
-	JOIN pokemons ON TM_materials.pm_source = pokemons.link
-	JOIN names ON pokemons.pid = names.pid
-WHERE
-	TM_materials.tm_id = ?
-    """,
-                (tm["TMPid"],),
-            ):
-                tm["materials"].append(material)
-
-        if row["link"] in evolveInvMap:
-            for move in cursor.execute(
-                """
-SELECT
-    pokemons.link as "pm_link",
-    names.nameZh as "pm_nameZh",
-    pokemons.altForm as "pm_altForm",
-    pokemons.type_1 as "pm_type_1",
-    pokemons.type_2 as "pm_type_2",
-	pokemon_moves.level,
+	TRs.pid as TRPid,
 	moves.*
 FROM
-	pokemon_moves
-	JOIN moves ON pokemon_moves.move_id = moves.pid
-	JOIN pokemons on pokemon_moves.pokemon_link = pokemons.link
-	join names on names.pid = pokemons.pid
+	pokemon_TRs
+	JOIN TRs ON pokemon_TRs.tr_id = TRs.pid
+	JOIN moves ON TRs.move_id = moves.pid
 WHERE
-	pokemon_moves.pokemon_link = ?
-	AND pokemon_moves.move_id not in(
-		SELECT
-			pokemon_moves.move_id FROM pokemon_moves
-		WHERE
-			pokemon_moves.pokemon_link = ? UNION SELECT
-	TMs.move_id
-FROM
-	pokemon_TMs
-	JOIN TMs ON pokemon_TMs.tm_id = TMs.pid
-WHERE
-	pokemon_TMs.pokemon_link = ?);
-    """,
-                (
-                    evolveInvMap[row["link"]],
-                    row["link"],
-                    row["link"],
-                ),
-            ):
-                pm = {"types": []}
-                move_ = {}
-                for key in move:
-                    if key.startswith("pm"):
-                        if key.startswith("pm_type"):
-                            pm["types"].append(move[key])
-                        else:
-                            pm[key.split("_")[1]] = move[key]
-                    else:
-                        move_[key] = move[key]
+	pokemon_TRs.pokemon_link = ?
+ORDER BY
+	TRs.pid;
+""",
+            (row["link"],),
+        ):
+            moveMap["TRs"].append(move)
 
-                move_["pm"] = pm
-
-                if row["link"] in [
-                    "157-1",
-                    "503-1",
-                    "549-1",
-                    "628-1",
-                    "724-1",
-                    "899",
-                    "900",
-                    "901",
-                ]:
-                    print(
-                        move["pm_nameZh"],
-                        move["pm_altForm"],
-                        move["nameZh"],
-                        "=====洗翠的不匯入",
-                    )
-                else:
-                    moveMap["beforeEvolve"].append(move_)
-                    print(move["pm_nameZh"], move["pm_altForm"], move["nameZh"])
-
-        if row["link"] in evolveInvMap and evolveInvMap[row["link"]] in evolveInvMap:
-            for move in cursor.execute(
-                """
+        for move in cursor.execute(
+            """
 SELECT
-    pokemons.link as "pm_link",
-    names.nameZh as "pm_nameZh",
-    pokemons.altForm as "pm_altForm",
-    pokemons.type_1 as "pm_type_1",
-    pokemons.type_2 as "pm_type_2",
-	pokemon_moves.level,
 	moves.*
 FROM
-	pokemon_moves
-	JOIN moves ON pokemon_moves.move_id = moves.pid
-	JOIN pokemons on pokemon_moves.pokemon_link = pokemons.link
-	join names on names.pid = pokemons.pid
+	pokemon_tutors
+	JOIN moves ON pokemon_tutors.move_id = moves.pid
 WHERE
-	pokemon_moves.pokemon_link = ?
-	AND pokemon_moves.move_id not in(
-		SELECT
-			pokemon_moves.move_id FROM pokemon_moves
-		WHERE
-			pokemon_moves.pokemon_link = ? UNION SELECT
-	TMs.move_id
-FROM
-	pokemon_TMs
-	JOIN TMs ON pokemon_TMs.tm_id = TMs.pid
-WHERE
-	pokemon_TMs.pokemon_link = ?);
-    """,
-                (
-                    evolveInvMap[evolveInvMap[row["link"]]],
-                    evolveInvMap[row["link"]],
-                    evolveInvMap[row["link"]],
-                ),
-            ):
-                pm = {"types": []}
-                move_ = {}
-                for key in move:
-                    if key.startswith("pm"):
-                        if key.startswith("pm_type"):
-                            pm["types"].append(move[key])
-                        else:
-                            pm[key.split("_")[1]] = move[key]
-                    else:
-                        move_[key] = move[key]
-
-                move_["pm"] = pm
-
-                if row["link"] in [
-                    "157-1",
-                    "503-1",
-                    "549-1",
-                    "628-1",
-                    "724-1",
-                    "899",
-                    "900",
-                    "901",
-                ]:
-                    print(
-                        move["pm_nameZh"],
-                        move["pm_altForm"],
-                        move["nameZh"],
-                        "跨兩階",
-                        "=====洗翠的不匯入",
-                    )
-                else:
-                    moveMap["beforeEvolve"].append(move_)
-                    print(
-                        move["pm_nameZh"], move["pm_altForm"], move["nameZh"], "跨兩階"
-                    )
-
-        if row["link"] in evolveInvMap:
-            for tm in cursor.execute(
-                """
-SELECT
-	pokemon_TMs.pokemon_link AS "pm_link",
-	names.nameZh AS "pm_nameZh",
-	pokemons.altForm AS "pm_altForm",
-	pokemons.type_1 AS "pm_type_1",
-	pokemons.type_2 AS "pm_type_2",
-	TMs.pid as "TMPid",
-	TMs.leaguePoint,
-	moves.*
-FROM
-	pokemon_TMs
-	JOIN TMs ON pokemon_TMs.tm_id = TMs.pid
-	JOIN moves ON TMs.move_id = moves.pid
-	JOIN pokemons ON pokemon_TMs.pokemon_link = pokemons.link
-	JOIN names ON pokemons.pid = names.pid
-WHERE
-	pokemon_TMs.tm_id > 0
-	AND pokemon_TMs.pokemon_link = ?
-	AND pokemon_TMs.tm_id NOT in(
-		SELECT
-			pokemon_TMs.tm_id FROM pokemon_TMs
-		WHERE
-			pokemon_TMs.pokemon_link = ?);
-        """,
-                (
-                    evolveInvMap[row["link"]],
-                    row["link"],
-                ),
-            ):
-                for tm_ in cursor.execute(
-                    """
-    SELECT
-        count(*) as "count"
-    FROM
-        pokemon_moves
-    WHERE
-        pokemon_moves.pokemon_link = ?
-        AND pokemon_moves.move_id = ?;
-            """,
-                    (
-                        row["link"],
-                        tm["pid"],
-                    ),
-                ):
-                    if tm_["count"] == 0:
-                        pm = {"types": []}
-                        move = {}
-                        for key in tm:
-                            if key.startswith("pm"):
-                                if key.startswith("pm_type"):
-                                    pm["types"].append(tm[key])
-                                else:
-                                    pm[key.split("_")[1]] = tm[key]
-                            else:
-                                move[key] = tm[key]
-
-                        move["pm"] = pm
-                        move["materials"] = []
-                        for material in cursor.execute(
-                            """
-            SELECT
-                names.nameZh || '的' || TM_materials.part AS material,
-                TM_materials.count,
-                TM_materials.pm_source AS pm
-            FROM
-                TM_materials
-                JOIN pokemons ON TM_materials.pm_source = pokemons.link
-                JOIN names ON pokemons.pid = names.pid
-            WHERE
-                TM_materials.tm_id = ?
-                """,
-                            (tm["TMPid"],),
-                        ):
-                            move["materials"].append(material)
-
-                        print(
-                            "招式機======>",
-                            move["pm"]["nameZh"],
-                            move["pm"]["altForm"],
-                            move["nameZh"],
-                        )
-                        moveMap["beforeEvolveTMs"].append(move)
-
-        if row["link"] in evolveInvMap and evolveInvMap[row["link"]] in evolveInvMap:
-            tms__ = [
-                tm__
-                for tm__ in cursor.execute(
-                    """
-SELECT
-	pokemon_TMs.pokemon_link AS "pm_link",
-	names.nameZh AS "pm_nameZh",
-	pokemons.altForm AS "pm_altForm",
-	pokemons.type_1 AS "pm_type_1",
-	pokemons.type_2 AS "pm_type_2",
-	TMs.pid as "TMPid",
-	TMs.leaguePoint,
-	moves.*
-FROM
-	pokemon_TMs
-	JOIN TMs ON pokemon_TMs.tm_id = TMs.pid
-	JOIN moves ON TMs.move_id = moves.pid
-	JOIN pokemons ON pokemon_TMs.pokemon_link = pokemons.link
-	JOIN names ON pokemons.pid = names.pid
-WHERE
-	pokemon_TMs.tm_id > 0
-	AND pokemon_TMs.pokemon_link = ?
-	AND pokemon_TMs.tm_id NOT in(
-		SELECT
-			pokemon_TMs.tm_id FROM pokemon_TMs
-		WHERE
-			pokemon_TMs.pokemon_link = ?);
-        """,
-                    (
-                        evolveInvMap[evolveInvMap[row["link"]]],
-                        row["link"],
-                    ),
-                )
-            ]
-
-            for tm__ in tms__:
-                for tm___ in cursor.execute(
-                    """
-        SELECT
-            count(*) as "count"
-        FROM
-            pokemon_moves
-        WHERE
-            pokemon_moves.pokemon_link = ?
-            AND pokemon_moves.move_id = ?;
-                """,
-                    (
-                        row["link"],
-                        tm__["pid"],
-                    ),
-                ):
-                    if tm___["count"] == 0:
-                        pm = {"types": []}
-                        move = {}
-                        for key in tm__:
-                            if key.startswith("pm"):
-                                if key.startswith("pm_type"):
-                                    pm["types"].append(tm__[key])
-                                else:
-                                    pm[key.split("_")[1]] = tm__[key]
-                            else:
-                                move[key] = tm__[key]
-
-                        move["pm"] = pm
-                        move["materials"] = []
-                        for material in cursor.execute(
-                            """
-                SELECT
-                    names.nameZh || '的' || TM_materials.part AS material,
-                    TM_materials.count,
-                    TM_materials.pm_source AS pm
-                FROM
-                    TM_materials
-                    JOIN pokemons ON TM_materials.pm_source = pokemons.link
-                    JOIN names ON pokemons.pid = names.pid
-                WHERE
-                    TM_materials.tm_id = ?
-                    """,
-                            (tm["TMPid"],),
-                        ):
-                            move["materials"].append(material)
-
-                        print(
-                            "招式機=跨兩階=====>",
-                            move["pm"]["nameZh"],
-                            move["pm"]["altForm"],
-                            move["nameZh"],
-                        )
-                        moveMap["beforeEvolveTMs"].append(move)
+	pokemon_tutors.pokemon_link = ?
+ORDER BY
+	moves.pid;
+""",
+            (row["link"],),
+        ):
+            moveMap["tutors"].append(move)
 
         row["moves"] = moveMap
 
@@ -1105,20 +801,6 @@ ORDER BY
         if len(row["evolves"]["to"]) == 0:
             del row["evolves"]
 
-        row["tags"] = []
-        for tag in cursor.execute(
-            """
-SELECT
-	tag
-FROM
-	pokemon_tags
-WHERE
-	pokemon_tags.pokemon_link = ?
-""",
-            (row["link"],),
-        ):
-            row["tags"].append(tag["tag"])
-
         row["formChangin"] = []
         for pm in cursor.execute(
             """
@@ -1156,6 +838,7 @@ ORDER BY
         with open(f"../public/data/pm/{row['link']}.json", "w") as output_file:
             output_file.write(json.dumps(row))
 
+    exit()
     print("save moves >>>>>>")
 
     for i in range(1, 1000):
