@@ -838,7 +838,6 @@ ORDER BY
         with open(f"../public/data/pm/{row['link']}.json", "w") as output_file:
             output_file.write(json.dumps(row))
 
-    exit()
     print("save moves >>>>>>")
 
     for i in range(1, 1000):
@@ -885,17 +884,15 @@ ORDER BY
                 del pm["level"]
                 move["egg"].append(pm)
 
-        TM = {"materials": []}
+        TM = {}
         for row in cursor.execute(
             """
 SELECT
-	TMs.pid,
-	TMs.leaguePoint
+	TMs.pid
 FROM
 	TMs
 WHERE
 	TMs.move_id = ?
-	AND TMs.leaguePoint NOT NULL
             """,
             (i,),
         ):
@@ -904,37 +901,6 @@ WHERE
 
         if "pid" in TM:
             move["TM"] = TM
-
-        for row in cursor.execute(
-            """
-SELECT
-	TMs.pid,
-	TMs.leaguePoint,
-	names.nameZh || '的' || TM_materials.part as "materials_part",
-	TM_materials."count" as "materials_count",
-	names.pid as "materials_link"
-
-FROM
-	TMs
-	join TM_materials on TM_materials.tm_id = TMs.pid
-	join names on names.pid = TM_materials.pm_source
-WHERE
-	TMs.move_id = ?
-	AND TMs.leaguePoint NOT NULL
-            """,
-            (i,),
-        ):
-            material = {}
-            for key in row:
-                if key.startswith("materials"):
-                    material[key.split("_")[1]] = row[key]
-                else:
-                    TM[key] = row[key]
-            TM["materials"].append(material)
-
-        # print(TM)
-        if "leaguePoint" in TM and TM["leaguePoint"] > 0:
-            # move["TM"] = TM
             move["TM"]["pm"] = []
             for row in cursor.execute(
                 """
@@ -1029,8 +995,7 @@ WHERE
 		SELECT
 			moves.pid FROM TMs
 			JOIN moves ON TMs.move_id = moves.pid
-		WHERE
-			TMs.leaguePoint > 0)
+	)
 ORDER BY
 	moves.pid;
             """,
@@ -1041,7 +1006,9 @@ ORDER BY
         if move["TMPid"] == 0:
             move["TMPid"] = None
 
-    with open(f"../public/data/move_list_300.json", "w") as output_file:
+    with open(
+        f"../public/data/move_list_{version.replace('.', '')}.json", "w"
+    ) as output_file:
         output_file.write(json.dumps(all_moves))
 
     cursor.close()
@@ -1052,5 +1019,7 @@ ORDER BY
             if key in row:
                 del row[key]
 
-    with open("../public/data/base_list_300.json", "w") as output_file:
+    with open(
+        f"../public/data/base_list_{version.replace('.', '')}.json", "w"
+    ) as output_file:
         output_file.write(json.dumps(new_data))

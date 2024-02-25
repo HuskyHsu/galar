@@ -1,0 +1,31 @@
+import { FullPokemon } from '@/types/Pokemon';
+
+export const defaultPokemon: FullPokemon = {
+  pid: 0,
+  link: '0',
+  galar: null,
+  armor: null,
+  crown: null,
+  nameZh: '',
+  nameJp: '',
+  nameEn: '',
+  altForm: null,
+  hiddenAbility: '',
+  baseStatsTotal: 600,
+  genderRatio: 0,
+  source: '0',
+  types: [],
+  abilities: [],
+  eggGroups: [],
+  baseStats: [100, 100, 100, 100, 100, 100],
+  EVs: [0, 0, 0, 0, 0, 0],
+  moves: {
+    levelingUps: [],
+    eggMoves: [],
+    TMs: [],
+    beforeEvolve: [],
+    beforeEvolveTMs: [],
+  },
+  tags: [],
+  hasEvolves: true,
+};
