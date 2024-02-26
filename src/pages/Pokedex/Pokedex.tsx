@@ -26,7 +26,7 @@ export type Display = {
   pid: boolean;
 };
 
-const itemsPerPage = 100;
+const itemsPerPage = 30;
 
 function Pokedex() {
   const { filter, updateState, updateNumberState, updateSetState, display, toggleDisplay } =
