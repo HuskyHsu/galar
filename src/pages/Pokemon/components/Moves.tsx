@@ -25,8 +25,10 @@ type colValue = {
 
 const bgColorMap = {
   TMs: 'bg-custom-orange/10',
-  eggMoves: 'bg-custom-green/10',
+  TRs: 'bg-custom-green/10',
+  eggMoves: 'bg-scarlet/10',
   levelingUps: 'bg-custom-blue/10',
+  tutors: 'bg-violet/10',
 };
 
 const columns = [
@@ -50,26 +52,20 @@ const columns = [
     header: '來源',
     value: ({ row }: colValue) => {
       if ('TMPid' in row) {
-        if ('pm' in row) {
-          return `${row.pm.nameZh}${
-            row.pm.altForm ? '(' + row.pm.altForm + ')' : ''
-          }: TM${row.TMPid.toString().padStart(3, '0')}`;
-        }
         return `TM${row.TMPid.toString().padStart(3, '0')}`;
       }
 
-      if ('level' in row && !('pm' in row)) {
+      if ('TRPid' in row) {
+        return `TR${row.TRPid.toString().padStart(3, '0')}`;
+      }
+
+      if ('level' in row) {
         return row.level < 1
           ? LevelMap[row.level.toString() as keyof typeof LevelMap]
           : `Lv${row.level.toString().padStart(2, '0')}`;
       }
 
-      const level =
-        row.level < 1
-          ? LevelMap[row.level.toString() as keyof typeof LevelMap]
-          : `Lv${row.level.toString().padStart(2, '0')}`;
-
-      return `${row.pm.nameZh}${row.pm.altForm ? '(' + row.pm.altForm + ')' : ''}: ${level}`;
+      return `傳授`;
     },
     meta: 'w-[13.5%]',
   },
@@ -121,31 +117,33 @@ const columns = [
 
 export function Moves({ pm }: Props) {
   const allMoves: { move: PMMove; key: string; type: string }[] = (pm.moves.levelingUps as PMMove[])
-    .concat(pm.moves.beforeEvolve as PMMove[])
     .concat(pm.moves.eggMoves as PMMove[])
     .concat(pm.moves.TMs as PMMove[])
-    .concat(pm.moves.beforeEvolveTMs as PMMove[])
+    .concat(pm.moves.TRs as PMMove[])
+    .concat(pm.moves.tutors as PMMove[])
     .map((move) => {
       let key = `${move.pid}`;
       if ('level' in move) {
         key += `:level${move.level}`;
-      }
-      if ('pm' in move) {
-        key += `:PM${move.pm.link}`;
-      }
-      if ('TMPid' in move) {
+      } else if ('TMPid' in move) {
         key += `:TM${move.TMPid}`;
+      } else if ('TRPid' in move) {
+        key += `:TR${move.TRPid}`;
       }
 
       let type = '';
       if ('TMPid' in move) {
         type = 'TMs';
+      } else if ('TRPid' in move) {
+        type = 'TRs';
       } else if ('level' in move) {
         if (move.level < 0) {
           type = 'eggMoves';
         } else {
           type = 'levelingUps';
         }
+      } else {
+        type = 'tutors';
       }
 
       return {

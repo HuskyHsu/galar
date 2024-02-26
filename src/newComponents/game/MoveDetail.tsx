@@ -24,7 +24,7 @@ function LevelingUps({ move, onlyEvolve }: Prop) {
               text = LevelMap[pm.level];
             }
 
-            return <PokemonBadge pm={pm} key={pm.link} text={text} />;
+            return <PokemonBadge pm={pm} key={`${pm.link}-${pm.level}`} text={text} />;
           })}
       </div>
     </>

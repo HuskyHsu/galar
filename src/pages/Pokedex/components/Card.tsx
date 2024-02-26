@@ -100,7 +100,7 @@ export function Card({ pokemon, filter, display }: Props) {
     >
       <header className={'relative h-6 md:h-auto'}>
         <span className="hidden whitespace-nowrap md:block">#{pid}</span>
-        <Icon.Game.PmIcon pm={pokemon} className="absolute bottom-0 md:-right-8" />
+        <Icon.Game.Pm pm={pokemon} className="absolute -bottom-4 md:-right-6 md:w-4/5" />
       </header>
       <hr className="border-0 border-t-[1px] border-[#A29834]" />
       <div className="flex h-full flex-col justify-between gap-y-1">

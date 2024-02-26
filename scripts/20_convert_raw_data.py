@@ -420,6 +420,13 @@ if __name__ == "__main__":
             print(data["Name"])
             continue
 
+        if data["pid"] == 718:
+            if data["Name"] == "基格爾德":
+                continue
+
+            if data["Name"] in ["基格爾德-2", "基格爾德-3"]:
+                data["Abilities"] = ["氣場破壞", "群聚變形"]
+
         link = data["link"]
 
         columns = [

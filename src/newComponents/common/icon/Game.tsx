@@ -39,6 +39,20 @@ function PmIcon({ pm, className = '' }: { pm: Pokemon | SubPokemon; className?: 
   );
 }
 
+function Pm({ pm, className = '' }: { pm: Pokemon | SubPokemon; className?: string }) {
+  return (
+    <img
+      className={clsx('pointer-events-none w-auto', className)}
+      src={`${process.env.PUBLIC_URL}/image/pm/${pm.link}.png`}
+      alt={pm.nameZh}
+      loading="lazy"
+      onError={(event) => {
+        event.currentTarget.src = `${process.env.PUBLIC_URL}/image/pm/0.png`;
+      }}
+    />
+  );
+}
+
 function PmHome({
   pm,
   shiny = false,
@@ -63,4 +77,4 @@ function PmHome({
   );
 }
 
-export { Type, MoveCategory, PmIcon, PmHome };
+export { Type, MoveCategory, Pm, PmIcon, PmHome };

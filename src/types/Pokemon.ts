@@ -83,28 +83,22 @@ type LevelingUp = Move & { level: number };
 
 type EggMove = Move & { level: number };
 
-type beforeEvolveMove = Move & { level: number; pm: SubPokemon };
-
-type beforeEvolveTMMove = Move & TM & { pm: SubPokemon };
-
 type TM = Move & {
   TMPid: number;
-  leaguePoint: number;
-  materials: {
-    material: string;
-    count: number;
-    pm: string;
-  }[];
 };
 
-export type PMMove = LevelingUp | EggMove | beforeEvolveMove | TM | beforeEvolveTMMove;
+type TR = Move & {
+  TRPid: number;
+};
+
+export type PMMove = LevelingUp | EggMove | TM | TR | Move;
 
 type MoveInfo = {
   levelingUps: LevelingUp[];
   eggMoves: EggMove[];
-  beforeEvolve: beforeEvolveMove[];
-  beforeEvolveTMs: beforeEvolveTMMove[];
   TMs: TM[];
+  TRs: TR[];
+  tutors: Move[];
 };
 
 export enum MoveCategoryEnum {
