@@ -95,9 +95,7 @@ def rowsToJsonArray(raw_data):
             if "<ITEM>" in condition:
                 if item.isnumeric():
                     if "Item" in method or "LevelUpKnowMove" in method:
-                        condition = condition.replace(
-                            "<ITEM>", evolutionItem_dict[item]
-                        )
+                        condition = condition.replace("<ITEM>", evolutionItem_dict[item])
                     else:
                         condition = condition.replace("<ITEM>", item)
                 else:
@@ -118,11 +116,7 @@ def rowsToJsonArray(raw_data):
             curr_index = 0
 
             curr["pid"] = (
-                [
-                    row["pid"]
-                    for row in new_data
-                    if row["Name"] == curr["Name"].split("-")[0]
-                ][0]
+                [row["pid"] for row in new_data if row["Name"] == curr["Name"].split("-")[0]][0]
                 if "-" in curr["Name"]
                 else curr["pid"]
             )
@@ -146,9 +140,7 @@ def rowsToJsonArray(raw_data):
                 curr["CrownDex"] = int(curr["CrownDex"][1:])
 
             curr["Type"] = [type_dict[t] for t in curr["Type"].split(" / ")]
-            curr["EggGroup"] = [
-                egg_group_dict[t] for t in curr["EggGroup"].split(" / ")
-            ]
+            curr["EggGroup"] = [egg_group_dict[t] for t in curr["EggGroup"].split(" / ")]
 
             abilities_ = []
             for ability in curr["Abilities"].split(" | "):
@@ -162,9 +154,7 @@ def rowsToJsonArray(raw_data):
             if abilities_[0] != abilities_[2]:
                 curr["AbilityHide"] = abilities_[2]
 
-            curr["BaseStats"] = [
-                int(s) for s in curr["BaseStats"].split(" (")[0].split(".")
-            ]
+            curr["BaseStats"] = [int(s) for s in curr["BaseStats"].split(" (")[0].split(".")]
 
             curr["EVYield"] = [int(s) for s in curr["EVYield"].split(".")]
             curr["GenderRatio"] = int(curr["GenderRatio"])
@@ -471,11 +461,7 @@ if __name__ == "__main__":
                 data["Type"][0],
                 data["Type"][1] if len(data["Type"]) > 1 else None,
                 ability_id_dict[data["Abilities"][0]],
-                (
-                    ability_id_dict[data["Abilities"][1]]
-                    if len(data["Abilities"]) > 1
-                    else None
-                ),
+                (ability_id_dict[data["Abilities"][1]] if len(data["Abilities"]) > 1 else None),
                 ability_id_dict[data["AbilityHide"]] if "AbilityHide" in data else None,
                 data["BaseStats"][0],
                 data["BaseStats"][1],
@@ -631,7 +617,7 @@ ORDER BY
         }
         for move in cursor.execute(
             """
-SELECT
+SELECT DISTINCT
 	pokemon_moves.level,
 	moves.*
 FROM
@@ -738,9 +724,7 @@ ORDER BY
                     if key_.startswith("type"):
                         row["evolves"]["from"]["types"] = [evolve["from_type_1"]]
                         if evolve["from_type_2"] != None:
-                            row["evolves"]["from"]["types"].append(
-                                evolve["from_type_2"]
-                            )
+                            row["evolves"]["from"]["types"].append(evolve["from_type_2"])
                     else:
                         row["evolves"]["from"][key_] = evolve[key]
 
@@ -1013,9 +997,7 @@ ORDER BY
         if move["TMPid"] == 0:
             move["TMPid"] = None
 
-    with open(
-        f"../public/data/move_list_{version.replace('.', '')}.json", "w"
-    ) as output_file:
+    with open(f"../public/data/move_list_{version.replace('.', '')}.json", "w") as output_file:
         output_file.write(json.dumps(all_moves))
 
     cursor.close()
@@ -1026,7 +1008,5 @@ ORDER BY
             if key in row:
                 del row[key]
 
-    with open(
-        f"../public/data/base_list_{version.replace('.', '')}.json", "w"
-    ) as output_file:
+    with open(f"../public/data/base_list_{version.replace('.', '')}.json", "w") as output_file:
         output_file.write(json.dumps(new_data))

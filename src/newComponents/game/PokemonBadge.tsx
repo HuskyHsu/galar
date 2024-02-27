@@ -40,13 +40,13 @@ export function SubCard({ pm, className = '' }: SubCardProps) {
           'rounded-full',
           'inset-x-0 h-5 md:h-7',
           'bg-gradient-to-r',
-          'top-2/3 -translate-y-2/3',
+          'top-1/3 -translate-y-1/3',
           BgFromType[pm.types[0] as keyof typeof BgFromType],
           BgToType[(pm.types.length > 1 ? pm.types[1] : pm.types[0]) as keyof typeof BgToType]
         )}
       />
       <span className={clsx('absolute', 'inset-x-0', 'top-1/3 -translate-y-1/2')}>
-        <Icon.Game.PmIcon pm={pm} />
+        <Icon.Game.Pm pm={pm} />
       </span>
       <span
         className={clsx(
