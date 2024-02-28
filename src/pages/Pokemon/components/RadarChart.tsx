@@ -94,11 +94,11 @@ export function RadarChart({
 
   const speciesStrength = [
     getPosition(270, (hp * radius) / 255),
-    getPosition(330, (atk * radius) / 170),
-    getPosition(30, (def * radius) / 184),
+    getPosition(330, (atk * radius) / 181),
+    getPosition(30, (def * radius) / 250),
     getPosition(90, (speed * radius) / 200),
-    getPosition(150, (spDef * radius) / 184),
-    getPosition(210, (spAtk * radius) / 170),
+    getPosition(150, (spDef * radius) / 250),
+    getPosition(210, (spAtk * radius) / 181),
   ];
 
   const labels = [
