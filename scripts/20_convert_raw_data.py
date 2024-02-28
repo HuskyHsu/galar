@@ -936,6 +936,67 @@ ORDER BY names.pid, pokemons.link;
                     for key in row:
                         move[key] = row[key]
 
+        TR = {}
+        for row in cursor.execute(
+            """
+SELECT
+	TRs.pid
+FROM
+	TRs
+WHERE
+	TRs.move_id = ?
+            """,
+            (i,),
+        ):
+            for key in row:
+                TR[key] = row[key]
+
+        if "pid" in TR:
+            move["TR"] = TR
+            move["TR"]["pm"] = []
+            for row in cursor.execute(
+                """
+SELECT
+	pokemons.link,
+	names.nameZh,
+	pokemons.altForm,
+    pokemons.type_1,
+    pokemons.type_2
+FROM
+	pokemon_TRs
+	JOIN pokemons ON pokemon_TRs.pokemon_link = pokemons.link
+	JOIN names ON pokemons.pid = names.pid
+WHERE
+	pokemon_TRs.tr_id = ?
+ORDER BY names.pid, pokemons.link;
+            """,
+                (move["TR"]["pid"],),
+            ):
+                pm = {"types": []}
+                for key in row:
+                    if key.startswith("type"):
+                        if row[key] != None:
+                            pm["types"].append(row[key])
+                    else:
+                        pm[key] = row[key]
+
+                move["TR"]["pm"].append(pm)
+
+            if not "nameZh" in move:
+                for row in cursor.execute(
+                    """
+        SELECT
+            moves.*
+        FROM
+            moves
+        WHERE
+            moves.pid = ?;
+            """,
+                    (i,),
+                ):
+                    for key in row:
+                        move[key] = row[key]
+
         for pm in move["levelingUps"]:
             if not pm["link"] in evolveMap:
                 continue
@@ -964,7 +1025,17 @@ ORDER BY names.pid, pokemons.link;
                 if len(nextPms) > 0:
                     pm["child"] = True
 
-        if len(move["levelingUps"]) > 0 or len(move["egg"]) > 0 or "TM" in move:
+        if "TR" in move:
+            for pm in move["TR"]["pm"]:
+                if not pm["link"] in evolveMap:
+                    continue
+
+                nextPm = evolveMap[pm["link"]]
+                nextPms = [pm_ for pm_ in move["TR"]["pm"] if pm_["link"] == nextPm]
+                if len(nextPms) > 0:
+                    pm["child"] = True
+
+        if len(move["levelingUps"]) > 0 or len(move["egg"]) > 0 or "TM" in move or "TR" in move:
             # print(move)
             with open(f"../public/data/move/{move['nameZh']}.json", "w") as output_file:
                 output_file.write(json.dumps(move))
@@ -975,10 +1046,12 @@ ORDER BY names.pid, pokemons.link;
             """
 SELECT
 	moves.*,
-	TMs.pid as "TMPid"
+	TMs.pid AS "TMPid",
+	TRs.pid AS "TRPid"
 FROM
 	moves
 	FULL OUTER JOIN TMs ON TMs.move_id = moves.pid
+	FULL OUTER JOIN TRs ON TRs.move_id = moves.pid
 WHERE
 	moves.pid in( SELECT DISTINCT
 			move_id FROM pokemon_moves)
@@ -986,7 +1059,10 @@ WHERE
 		SELECT
 			moves.pid FROM TMs
 			JOIN moves ON TMs.move_id = moves.pid
-	)
+	UNION
+	SELECT
+		moves.pid FROM TRs
+		JOIN moves ON TRs.move_id = moves.pid)
 ORDER BY
 	moves.pid;
             """,
@@ -996,6 +1072,10 @@ ORDER BY
     for move in all_moves:
         if move["TMPid"] == 0:
             move["TMPid"] = None
+
+        if move["TRPid"] == 0:
+            move["TRPid"] = None
+
 
     with open(f"../public/data/move_list_{version.replace('.', '')}.json", "w") as output_file:
         output_file.write(json.dumps(all_moves))

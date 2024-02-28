@@ -118,19 +118,15 @@ export enum Accuracy {
   '—' = 0,
 }
 
-type material = {
-  part: string;
-  count: number;
-  link: number;
-};
-
 export type FullMove = Move & {
   levelingUps: (SubPokemon & { level: number; child?: boolean })[];
   egg: (SubPokemon & { child?: boolean })[];
   TM?: {
-    materials: material[];
     pid: number;
-    leaguePoint: number;
+    pm: (SubPokemon & { child?: boolean })[];
+  };
+  TR?: {
+    pid: number;
     pm: (SubPokemon & { child?: boolean })[];
   };
 };

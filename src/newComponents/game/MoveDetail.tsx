@@ -59,19 +59,35 @@ function TMs({ move, onlyEvolve }: Prop) {
   return (
     <>
       <hr className="my-3 h-px border-0 bg-gray-200" />
-      <h6 className="py-2 text-lg font-bold">招式機</h6>
+      <h6 className="py-2 text-lg font-bold">招式學習器</h6>
       <ul className="text-gray-5000 max-w-md list-inside list-disc space-y-1 pb-2">
         <li>編號：#{move.TM.pid.toString().padStart(3, '0')}</li>
-        <li>聯盟點數：{move.TM.leaguePoint === 1 ? '未知' : move.TM.leaguePoint}</li>
-        <li>
-          材料：
-          {move.TM.materials.length === 0
-            ? '未知'
-            : move.TM.materials.map((pm) => `${pm.part}x${pm.count}`).join('; ')}
-        </li>
       </ul>
       <div className="flex flex-wrap gap-2">
         {move.TM?.pm
+          .filter((pm) => (onlyEvolve ? pm.child === undefined : true))
+          .map((pm) => {
+            return <PokemonBadge pm={pm} key={pm.link} />;
+          })}
+      </div>
+    </>
+  );
+}
+
+function TRs({ move, onlyEvolve }: Prop) {
+  if (move.TR === undefined) {
+    return <></>;
+  }
+
+  return (
+    <>
+      <hr className="my-3 h-px border-0 bg-gray-200" />
+      <h6 className="py-2 text-lg font-bold">招式紀錄</h6>
+      <ul className="text-gray-5000 max-w-md list-inside list-disc space-y-1 pb-2">
+        <li>編號：#{move.TR.pid.toString().padStart(3, '0')}</li>
+      </ul>
+      <div className="flex flex-wrap gap-2">
+        {move.TR?.pm
           .filter((pm) => (onlyEvolve ? pm.child === undefined : true))
           .map((pm) => {
             return <PokemonBadge pm={pm} key={pm.link} />;
@@ -116,6 +132,7 @@ export function MoveDetail({
       <LevelingUps move={move} onlyEvolve={onlyEvolve} />
       <Eggs move={move} onlyEvolve={onlyEvolve} />
       <TMs move={move} onlyEvolve={onlyEvolve} />
+      <TRs move={move} onlyEvolve={onlyEvolve} />
     </div>
   );
 }
