@@ -997,6 +997,45 @@ ORDER BY names.pid, pokemons.link;
                     for key in row:
                         move[key] = row[key]
 
+        tutors = []
+        for row in cursor.execute(
+            """
+SELECT
+	moves.*,
+	pokemon_tutors.pokemon_link,
+	names.nameZh AS "pokemon_nameZh",
+	pokemons.altForm AS "pokemon_altForm",
+	pokemons.type_1 AS "pokemon_type_1",
+	pokemons.type_2 AS "pokemon_type_2"
+FROM
+	moves
+	JOIN pokemon_tutors ON moves.pid = pokemon_tutors.move_id
+	JOIN pokemons ON pokemons.link = pokemon_tutors.pokemon_link
+	JOIN names ON pokemons.pid = names.pid
+WHERE
+	moves.pid = ?
+ORDER BY
+	pokemons.pid,
+	pokemons.link;
+    """,
+            (i,),
+        ):
+            pm = {"types": []}
+            for key in row:
+                if key.startswith("pokemon"):
+                    if key.startswith("pokemon_type"):
+                        if row[key] != None:
+                            pm["types"].append(row[key])
+                    else:
+                        pm[key.split("_")[1]] = row[key]
+                    del key
+                else:
+                    move[key] = row[key]
+
+            tutors.append(pm)
+        if len(tutors) > 0:
+            move["tutors"] = tutors
+
         for pm in move["levelingUps"]:
             if not pm["link"] in evolveMap:
                 continue
@@ -1035,10 +1074,34 @@ ORDER BY names.pid, pokemons.link;
                 if len(nextPms) > 0:
                     pm["child"] = True
 
-        if len(move["levelingUps"]) > 0 or len(move["egg"]) > 0 or "TM" in move or "TR" in move:
+        if "tutors" in move:
+            for pm in move["tutors"]:
+                if not pm["link"] in evolveMap:
+                    continue
+
+                nextPm = evolveMap[pm["link"]]
+                nextPms = [pm_ for pm_ in move["egg"] if pm_["link"] == nextPm]
+                if len(nextPms) > 0:
+                    pm["child"] = True
+
+        if (
+            len(move["levelingUps"]) > 0
+            or len(move["egg"]) > 0
+            or "TM" in move
+            or "TR" in move
+            or "tutors" in move
+        ):
             # print(move)
             with open(f"../public/data/move/{move['nameZh']}.json", "w") as output_file:
                 output_file.write(json.dumps(move))
+
+    tutors_move_ids = []
+    for row in cursor.execute(
+        """
+SELECT DISTINCT move_id FROM pokemon_tutors
+    """,
+    ):
+        tutors_move_ids.append(row["move_id"])
 
     all_moves = [
         row
@@ -1063,8 +1126,10 @@ WHERE
 	SELECT
 		moves.pid FROM TRs
 		JOIN moves ON TRs.move_id = moves.pid)
-ORDER BY
-	moves.pid;
+		OR moves.pid in( SELECT DISTINCT
+				move_id FROM pokemon_tutors)
+	ORDER BY
+		moves.pid;
             """,
         )
     ]
@@ -1076,6 +1141,10 @@ ORDER BY
         if move["TRPid"] == 0:
             move["TRPid"] = None
 
+        if move["pid"] in tutors_move_ids:
+            move["tutors"] = True
+        else:
+            move["tutors"] = False
 
     with open(f"../public/data/move_list_{version.replace('.', '')}.json", "w") as output_file:
         output_file.write(json.dumps(all_moves))

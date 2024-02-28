@@ -97,6 +97,26 @@ function TRs({ move, onlyEvolve }: Prop) {
   );
 }
 
+function Tutors({ move, onlyEvolve }: Prop) {
+  if (move.tutors === undefined) {
+    return <></>;
+  }
+
+  return (
+    <>
+      <hr className="my-3 h-px border-0 bg-gray-200" />
+      <h6 className="py-2 text-lg font-bold">傳授招式</h6>
+      <div className="flex flex-wrap gap-2">
+        {move.tutors
+          .filter((pm) => (onlyEvolve ? pm.child === undefined : true))
+          .map((pm) => {
+            return <PokemonBadge pm={pm} key={pm.link} />;
+          })}
+      </div>
+    </>
+  );
+}
+
 export function MoveDetail({
   move,
   onlyEvolve,
@@ -133,6 +153,7 @@ export function MoveDetail({
       <Eggs move={move} onlyEvolve={onlyEvolve} />
       <TMs move={move} onlyEvolve={onlyEvolve} />
       <TRs move={move} onlyEvolve={onlyEvolve} />
+      <Tutors move={move} onlyEvolve={onlyEvolve} />
     </div>
   );
 }

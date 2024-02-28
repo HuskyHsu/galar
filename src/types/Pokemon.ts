@@ -129,6 +129,7 @@ export type FullMove = Move & {
     pid: number;
     pm: (SubPokemon & { child?: boolean })[];
   };
+  tutors?: (SubPokemon & { child?: boolean })[];
 };
 
 // Evolve

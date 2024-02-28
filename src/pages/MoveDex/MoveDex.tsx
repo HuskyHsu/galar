@@ -1,15 +1,15 @@
+import clsx from 'clsx';
 import { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import clsx from 'clsx';
 
+import { Icon } from '@/newComponents';
 import { Hr } from '@/newComponents/common';
 import { MoveDetail } from '@/newComponents/game';
-import { Icon } from '@/newComponents';
 import { Accuracy, FullMove } from '@/types/Pokemon';
 import { ValueKeys, api } from '@/utils';
 
-import { Header, Intersection } from './components';
 import { MoveType, useMoveListInfo } from './api';
+import { Header, Intersection } from './components';
 
 export type Filter = {
   keyword: string;
@@ -58,9 +58,18 @@ const columns = [
     meta: 'w-[20%] md:w-[10%]',
   },
   {
-    header: '招式機',
-    value: ({ row }: colValue) =>
-      row.TMPid !== null ? `${row.TMPid.toString().padStart(3, '0')}` : '',
+    header: '習得',
+    value: ({ row }: colValue) => {
+      if (row.TMPid !== null) {
+        return `TM${row.TMPid.toString().padStart(2, '0')}`;
+      } else if (row.TRPid !== null) {
+        return `TR${row.TRPid.toString().padStart(2, '0')}`;
+      } else if (row.tutors) {
+        return '傳授招式';
+      }
+
+      return '';
+    },
     meta: 'w-[12%] md:w-[8%]',
   },
   {
@@ -217,14 +226,16 @@ function MoveDex() {
               }
 
               if (filter.TM === '僅招式機') {
-                display = display && move.TMPid !== null;
+                display = display && (move.TMPid !== null || move.TRPid !== null || move.tutors);
               }
 
               return display;
             })
             .sort((a, b) => {
               if (filter.TM === '僅招式機') {
-                return (a.TMPid || 0) - (b.TMPid || 0);
+                let aPoint = (a.TMPid || 0 + 10000) + (a.TRPid || 0 + 1000);
+                let bPoint = (b.TMPid || 0 + 10000) + (b.TRPid || 0 + 1000);
+                return aPoint - bPoint;
               }
 
               return 1;

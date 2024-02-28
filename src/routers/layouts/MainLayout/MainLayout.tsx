@@ -1,13 +1,13 @@
-import { Suspense, useEffect } from 'react';
-import { Outlet, useNavigate, useLocation } from 'react-router-dom';
 import clsx from 'clsx';
+import { Suspense, useEffect } from 'react';
 import ReactGA from 'react-ga4';
+import { Outlet, useLocation, useNavigate } from 'react-router-dom';
 
 import { Icon } from '@/newComponents';
 import { Loading } from '@/newComponents/common';
 import { useBackToTopContext } from '@/newComponents/contexts';
-import { Item } from './Item';
 import { getJsonCache } from '@/store';
+import { Item } from './Item';
 
 const localStorageKey = 'pokeDexPage';
 
@@ -71,14 +71,14 @@ function MainLayout() {
           >
             <Icon.Books className="h-5 w-5 fill-current" />
           </Item>
-          {/* <Item
+          <Item
             text={'招式清單'}
             color="bg-custom-blue"
             selected={hash === 'movedex'}
             onClick={() => updateNav('movedex')}
           >
             <Icon.Book className="h-5 w-5 fill-current" />
-          </Item> */}
+          </Item>
         </div>
       </aside>
       <div

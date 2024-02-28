@@ -1,9 +1,9 @@
-import clsx from 'clsx';
-import { Buttons, SearchBar, SubTitleSlide } from '@/newComponents/common';
 import { Icon } from '@/newComponents';
-import { ValueKeys } from '@/utils';
-import { Filter } from '../MoveDex';
+import { Buttons, SearchBar, SubTitleSlide } from '@/newComponents/common';
 import { TYPE_MAP } from '@/types/Pokemon';
+import { ValueKeys } from '@/utils';
+import clsx from 'clsx';
+import { Filter } from '../MoveDex';
 
 type Props = {
   filter: Filter;
@@ -61,7 +61,7 @@ export function Header({ filter, updateState }: Props) {
         <Buttons
           list={[
             { name: '全部', val: '' },
-            { name: '僅招式機', val: '僅招式機' },
+            { name: '僅招式機/招式紀錄/傳授', val: '僅招式機' },
           ]}
           currVal={filter.TM}
           updateState={(val) => TMUpdate(val)}
