@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/galar/static/css/main.60ee2306.css",
+    "main.js": "/galar/static/js/main.d8b28b3a.js",
+    "Pokedex.js": "/galar/static/js/Pokedex.241b56f2.chunk.js",
+    "Pokemon.js": "/galar/static/js/Pokemon.e4a45f0f.chunk.js",
+    "MoveDex.js": "/galar/static/js/MoveDex.465b6933.chunk.js",
+    "static/js/787.b339c400.chunk.js": "/galar/static/js/787.b339c400.chunk.js",
+    "static/media/bg.png": "/galar/static/media/bg.7b5a0204a10fa00ccff3.png",
+    "static/media/Scarlet.svg": "/galar/static/media/Scarlet.16f7fd90321a770b189765e06fb2c678.svg",
+    "static/media/Compass.svg": "/galar/static/media/Compass.f965247e4629903da8f0a630a928d36e.svg",
+    "static/media/Filter.svg": "/galar/static/media/Filter.9a31f4bac5ec9c78adc597751369bde6.svg",
+    "static/media/Violet.svg": "/galar/static/media/Violet.ed36da4a188cb1936cf9be04deb4fbfb.svg",
+    "static/media/Books.svg": "/galar/static/media/Books.88c6f0e5e47299e407dd8e08b7b626f3.svg",
+    "static/media/Bag.svg": "/galar/static/media/Bag.8dbd2c94baf038fdffb18305edd9f2cf.svg",
+    "static/media/Share.svg": "/galar/static/media/Share.ce6c2c41ef1a0abedf9746b7c560e300.svg",
+    "static/media/Shiny.svg": "/galar/static/media/Shiny.82876923471bb8735437f6f531c179bf.svg",
+    "static/media/Book.svg": "/galar/static/media/Book.32a3a505f2783a46510df39a515ace12.svg",
+    "static/media/Close.svg": "/galar/static/media/Close.74456237ec34e4a0eeed0bf6f2f433a5.svg",
+    "index.html": "/galar/index.html",
+    "static/media/BackToTop.svg": "/galar/static/media/BackToTop.a8bced5a5202f7cec14ebb101367bc04.svg",
+    "static/media/Search.svg": "/galar/static/media/Search.70618b7533946d2ab5e393dce8e77709.svg",
+    "static/media/ArrowBack.svg": "/galar/static/media/ArrowBack.ec2c7f911771dddea2422db143e0cceb.svg",
+    "static/media/ArrowForward.svg": "/galar/static/media/ArrowForward.204ac83ab34908a616d745a4a46e7d3e.svg",
+    "main.60ee2306.css.map": "/galar/static/css/main.60ee2306.css.map",
+    "main.d8b28b3a.js.map": "/galar/static/js/main.d8b28b3a.js.map",
+    "Pokedex.241b56f2.chunk.js.map": "/galar/static/js/Pokedex.241b56f2.chunk.js.map",
+    "Pokemon.e4a45f0f.chunk.js.map": "/galar/static/js/Pokemon.e4a45f0f.chunk.js.map",
+    "MoveDex.465b6933.chunk.js.map": "/galar/static/js/MoveDex.465b6933.chunk.js.map",
+    "787.b339c400.chunk.js.map": "/galar/static/js/787.b339c400.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.60ee2306.css",
+    "static/js/main.d8b28b3a.js"
+  ]
+}
