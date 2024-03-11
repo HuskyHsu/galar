@@ -202,6 +202,141 @@ def rowsToJsonArray(raw_data):
             if "Reminder" in curr:
                 curr["Reminder"] = [move_dict[move] for move in curr["Reminder"]]
 
+            if curr["Name"] in [
+                "妙蛙種子",
+                "妙蛙草",
+                "妙蛙花",
+                "木守宮",
+                "森林蜥蜴",
+                "蜥蜴王",
+                "木木梟",
+                "投羽梟",
+                "狙射樹梟",
+                "銀伴戰獸",
+                "敲音猴",
+                "啪咚猴",
+                "轟擂金剛猩",
+            ]:
+                if "ArmorTutors" not in curr:
+                    curr["ArmorTutors"] = []
+                curr["ArmorTutors"].append("草之誓約")
+            if curr["Name"] in [
+                "小火龍",
+                "火恐龍",
+                "噴火龍",
+                "火球鼠",
+                "火岩鼠",
+                "火爆獸",
+                "火稚雞",
+                "力壯雞",
+                "火焰雞",
+                "小火焰猴",
+                "猛火猴",
+                "烈焰猴",
+                "暖暖豬",
+                "炒炒豬",
+                "炎武王",
+                "爆香猴",
+                "爆香猿",
+                "火狐狸",
+                "長尾火狐",
+                "妖火紅狐",
+                "火斑喵",
+                "炎熱喵",
+                "熾焰咆哮虎",
+                "銀伴戰獸",
+                "炎兔兒",
+                "騰蹴小將",
+                "閃焰王牌",
+            ]:
+                if "ArmorTutors" not in curr:
+                    curr["ArmorTutors"] = []
+                curr["ArmorTutors"].append("火之誓約")
+            if curr["Name"] in [
+                "傑尼龜",
+                "卡咪龜",
+                "水箭龜",
+                "小鋸鱷",
+                "藍鱷",
+                "大力鱷",
+                "水躍魚",
+                "沼躍魚",
+                "巨沼怪",
+                "波加曼",
+                "波皇子",
+                "帝王拿波",
+                "水水獺",
+                "雙刃丸",
+                "大劍鬼",
+                "冷水猴",
+                "冷水猿",
+                "呱呱泡蛙",
+                "呱頭蛙",
+                "甲賀忍蛙",
+                "球球海獅",
+                "花漾海獅",
+                "西獅海壬",
+                "銀伴戰獸",
+                "淚眼蜥",
+                "變澀蜥",
+                "千面避役",
+            ]:
+                if "ArmorTutors" not in curr:
+                    curr["ArmorTutors"] = []
+                curr["ArmorTutors"].append("水之誓約")
+
+            if curr["Name"] in [
+                "妙蛙花",
+                "大竺葵",
+                "蜥蜴王",
+                "土台龜",
+                "君主蛇",
+                "布里卡隆",
+                "狙射樹梟",
+                "轟擂金剛猩",
+            ]:
+                if "ArmorTutors" not in curr:
+                    curr["ArmorTutors"] = []
+                curr["ArmorTutors"].append("瘋狂植物")
+
+            if curr["Name"] in [
+                "噴火龍",
+                "火爆獸",
+                "火焰雞",
+                "烈焰猴",
+                "炎武王",
+                "妖火紅狐",
+                "熾焰咆哮虎",
+                "閃焰王牌",
+            ]:
+                if "ArmorTutors" not in curr:
+                    curr["ArmorTutors"] = []
+                curr["ArmorTutors"].append("爆炸烈焰")
+
+            if curr["Name"] in [
+                "水箭龜",
+                "大力鱷",
+                "巨沼怪",
+                "帝王拿波",
+                "大劍鬼",
+                "甲賀忍蛙",
+                "西獅海壬",
+                "千面避役",
+            ]:
+                if "ArmorTutors" not in curr:
+                    curr["ArmorTutors"] = []
+                curr["ArmorTutors"].append("加農水炮")
+
+            if "龍" in curr["Type"]:
+                if "ArmorTutors" not in curr:
+                    curr["ArmorTutors"] = []
+                curr["ArmorTutors"].append("流星群")
+
+            if "鋼" in curr["Type"]:
+                if "ArmorTutors" not in curr:
+                    curr["ArmorTutors"] = []
+                curr["ArmorTutors"].append("鐵蹄光線")
+
             new_data.append(curr)
             curr = {}
 
