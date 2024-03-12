@@ -114,6 +114,7 @@ function MoveDex() {
   const [pick, setPick] = useState<Set<number>>(new Set());
   const [moveMap, setMoveMap] = useState<Record<number, FullMove>>({});
   const [onlyEvolve, setOnlyEvolve] = useState<boolean>(true);
+  const [meetupSpotTRId, setMeetupSpotTRId] = useState<number>(0);
 
   const filter: Filter = {
     keyword: searchParams.get('keyword') || '',
@@ -304,6 +305,8 @@ function MoveDex() {
                       move={moveMap[move.pid as keyof typeof moveMap]}
                       onlyEvolve={onlyEvolve}
                       setOnlyEvolve={setOnlyEvolve}
+                      meetupSpotTRId={meetupSpotTRId}
+                      setMeetupSpotTRId={setMeetupSpotTRId}
                     />
                   </li>
                 );

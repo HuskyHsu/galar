@@ -1,10 +1,10 @@
-import { useState } from 'react';
 import clsx from 'clsx';
+import { useState } from 'react';
 
-import { Accuracy, FullMove, FullPokemon, LevelMap, PMMove } from '@/types/Pokemon';
+import { Icon } from '@/newComponents';
 import { Buttons, SearchBar, SubTitleSlide } from '@/newComponents/common';
 import { AttackRange, MoveDetail } from '@/newComponents/game';
-import { Icon } from '@/newComponents';
+import { Accuracy, FullMove, FullPokemon, LevelMap, PMMove } from '@/types/Pokemon';
 import { ValueKeys, api } from '@/utils';
 
 type Props = {
@@ -159,6 +159,7 @@ export function Moves({ pm }: Props) {
   const [pick, setPick] = useState<Set<string>>(new Set());
   const [moveMap, setMoveMap] = useState<Record<string, FullMove>>({});
   const [onlyEvolve, setOnlyEvolve] = useState<boolean>(true);
+  const [meetupSpotTRId, setMeetupSpotTRId] = useState<number>(0);
   const [filter, setFilter] = useState<Filter>({
     types: new Set(),
     category: new Set(),
@@ -374,6 +375,8 @@ export function Moves({ pm }: Props) {
                     move={moveMap[move.nameZh as keyof typeof moveMap]}
                     onlyEvolve={onlyEvolve}
                     setOnlyEvolve={setOnlyEvolve}
+                    meetupSpotTRId={meetupSpotTRId}
+                    setMeetupSpotTRId={setMeetupSpotTRId}
                   />
                 </li>
               );
