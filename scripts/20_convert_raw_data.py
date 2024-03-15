@@ -627,7 +627,7 @@ if __name__ == "__main__":
         addReminder(data, cursor)
         addEvolves(data, cursor)
 
-    # addTags(cursor)
+    addTags(cursor)
     conn.commit()
 
     fillingEggMoves(cursor)
@@ -926,6 +926,20 @@ ORDER BY
 
         if len(row["evolves"]["to"]) == 0:
             del row["evolves"]
+
+        row["tags"] = []
+        for tag in cursor.execute(
+            """
+SELECT
+	tag
+FROM
+	pokemon_tags
+WHERE
+	pokemon_tags.pokemon_link = ?
+""",
+            (row["link"],),
+        ):
+            row["tags"].append(tag["tag"])
 
         row["formChangin"] = []
         for pm in cursor.execute(
