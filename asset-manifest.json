@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/galar/static/css/main.aa2ef64a.css",
-    "main.js": "/galar/static/js/main.f8a7cdc1.js",
-    "Pokedex.js": "/galar/static/js/Pokedex.616e420a.chunk.js",
+    "main.js": "/galar/static/js/main.5e053dfe.js",
+    "Pokedex.js": "/galar/static/js/Pokedex.9bc775c8.chunk.js",
     "Pokemon.js": "/galar/static/js/Pokemon.0ffbc8f5.chunk.js",
     "MoveDex.js": "/galar/static/js/MoveDex.fc20fb9b.chunk.js",
     "static/js/787.b339c400.chunk.js": "/galar/static/js/787.b339c400.chunk.js",
@@ -23,14 +23,14 @@
     "static/media/ArrowBack.svg": "/galar/static/media/ArrowBack.ec2c7f911771dddea2422db143e0cceb.svg",
     "static/media/ArrowForward.svg": "/galar/static/media/ArrowForward.204ac83ab34908a616d745a4a46e7d3e.svg",
     "main.aa2ef64a.css.map": "/galar/static/css/main.aa2ef64a.css.map",
-    "main.f8a7cdc1.js.map": "/galar/static/js/main.f8a7cdc1.js.map",
-    "Pokedex.616e420a.chunk.js.map": "/galar/static/js/Pokedex.616e420a.chunk.js.map",
+    "main.5e053dfe.js.map": "/galar/static/js/main.5e053dfe.js.map",
+    "Pokedex.9bc775c8.chunk.js.map": "/galar/static/js/Pokedex.9bc775c8.chunk.js.map",
     "Pokemon.0ffbc8f5.chunk.js.map": "/galar/static/js/Pokemon.0ffbc8f5.chunk.js.map",
     "MoveDex.fc20fb9b.chunk.js.map": "/galar/static/js/MoveDex.fc20fb9b.chunk.js.map",
     "787.b339c400.chunk.js.map": "/galar/static/js/787.b339c400.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.aa2ef64a.css",
-    "static/js/main.f8a7cdc1.js"
+    "static/js/main.5e053dfe.js"
   ]
 }
