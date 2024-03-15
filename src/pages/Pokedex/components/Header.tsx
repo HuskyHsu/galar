@@ -113,18 +113,16 @@ export function Header({
             </button>
           ))}
         </div>
-        {/* <SubTitleSlide title="標籤(複選，交集)" />
+        <SubTitleSlide title="標籤(複選，交集)" />
         <Buttons
           list={[
             { name: '傳說與幻獸', val: '傳說與幻獸' },
-            { name: '悖謬寶可夢', val: '悖謬寶可夢' },
-            { name: '准傳說的寶可夢', val: '准傳說的寶可夢' },
-            { name: '朱版限定', val: '朱版限定' },
-            { name: '紫版限定', val: '紫版限定' },
+            { name: '劍版限定', val: '劍版限定' },
+            { name: '盾版限定', val: '盾版限定' },
           ]}
           currVal={filter.tags}
           updateState={updateSetState('tags')}
-        /> */}
+        />
       </div>
       <div className={clsx('mt-4 flex-col gap-2', display.advancedFilter ? 'flex' : 'hidden')}>
         <TitleSlide title="進階搜尋" />
