@@ -117,6 +117,7 @@ export function Header({
         <Buttons
           list={[
             { name: '傳說與幻獸', val: '傳說與幻獸' },
+            { name: '超極巨化', val: '超極巨化' },
             { name: '劍版限定', val: '劍版限定' },
             { name: '盾版限定', val: '盾版限定' },
           ]}
