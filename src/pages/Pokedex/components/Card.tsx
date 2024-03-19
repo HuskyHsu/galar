@@ -1,8 +1,8 @@
-import { Link } from 'react-router-dom';
 import clsx from 'clsx';
+import { Link } from 'react-router-dom';
 
 import { Icon } from '@/newComponents';
-import { EVIndex, EVName, PokedexFrom, PokedexList, Pokemon } from '@/types/Pokemon';
+import { EVIndex, EVName, GI, PokedexFrom, PokedexList, Pokemon } from '@/types/Pokemon';
 
 import { Display, Filter } from '../Pokedex';
 
@@ -82,6 +82,13 @@ const Pids = ({ pokemon, pokedex }: { pokemon: Pokemon; pokedex: string }) => {
   );
 };
 
+const ShowGi = ({ pokemon, filter }: Props) => {
+  if (filter.tags.has(GI) && pokemon.tags.includes(GI)) {
+    return <Icon.Game.PmGi pm={pokemon} className="absolute -bottom-4 md:-right-6 md:w-4/5" />;
+  }
+  return <Icon.Game.Pm pm={pokemon} className="absolute -bottom-4 md:-right-6 md:w-4/5" />;
+};
+
 export function Card({ pokemon, filter, display }: Props) {
   const pid = PokedexList.includes(filter.pokedex)
     ? (pokemon[filter.pokedex as PokedexFrom] || 0).toString().padStart(3, '0')
@@ -100,7 +107,7 @@ export function Card({ pokemon, filter, display }: Props) {
     >
       <header className={'relative h-6 md:h-auto'}>
         <span className="hidden whitespace-nowrap md:block">#{pid}</span>
-        <Icon.Game.Pm pm={pokemon} className="absolute -bottom-4 md:-right-6 md:w-4/5" />
+        <ShowGi filter={filter} pokemon={pokemon} display={display} />
       </header>
       <hr className="border-0 border-t-[1px] border-[#A29834]" />
       <div className="flex h-full flex-col justify-between gap-y-1">

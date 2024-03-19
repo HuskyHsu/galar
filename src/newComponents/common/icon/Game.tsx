@@ -1,5 +1,5 @@
-import clsx from 'clsx';
 import { MoveCategoryEnum, Pokemon, SubPokemon, TypeEnum } from '@/types/Pokemon';
+import clsx from 'clsx';
 
 function MoveCategory({ type, className = 'w-5 h-5' }: { type: string; className?: string }) {
   const typeName = MoveCategoryEnum[type as keyof typeof MoveCategoryEnum];
@@ -53,6 +53,20 @@ function Pm({ pm, className = '' }: { pm: Pokemon | SubPokemon; className?: stri
   );
 }
 
+function PmGi({ pm, className = '' }: { pm: Pokemon | SubPokemon; className?: string }) {
+  return (
+    <img
+      className={clsx('pointer-events-none w-auto', className)}
+      src={`${process.env.PUBLIC_URL}/image/pm/${pm.link}-gi.png`}
+      alt={pm.nameZh}
+      loading="lazy"
+      onError={(event) => {
+        event.currentTarget.src = `${process.env.PUBLIC_URL}/image/pm/0.png`;
+      }}
+    />
+  );
+}
+
 function PmHome({
   pm,
   shiny = false,
@@ -77,4 +91,4 @@ function PmHome({
   );
 }
 
-export { Type, MoveCategory, Pm, PmIcon, PmHome };
+export { MoveCategory, Pm, PmGi, PmHome, PmIcon, Type };

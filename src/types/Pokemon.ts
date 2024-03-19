@@ -38,6 +38,8 @@ export type PokedexFrom = 'galar' | 'armor' | 'crown';
 
 export const PokedexList = ['galar', 'armor', 'crown'];
 
+export const GI = '超極巨化';
+
 export enum EVIndex {
   HP = 0,
   Atk = 1,

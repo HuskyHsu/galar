@@ -1,9 +1,13 @@
+import clsx from 'clsx';
 import { useEffect, useState } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 
+import { Icon } from '@/newComponents';
 import { SubTitleSlide } from '@/newComponents/common';
 import { usePokemonListContext } from '@/newComponents/contexts';
 import { SubCard } from '@/newComponents/game';
+import { FullPokemon, GI } from '@/types/Pokemon';
+import { api } from '@/utils';
 import { defaultPokemon } from './api';
 import {
   BaseInfo,
@@ -16,8 +20,6 @@ import {
   TabButtom,
   TypeWeakness,
 } from './components';
-import { FullPokemon } from '@/types/Pokemon';
-import { api } from '@/utils';
 
 const localStorageKey = 'pokemonPage';
 
@@ -82,7 +84,7 @@ function PokemonInfo() {
           </ul>
         </div>
 
-        {tab === '基本資訊' && (
+        {tab === tabList[0] && (
           <>
             <BaseInfo pm={pm} />
             {pm.evolves !== undefined && (
@@ -101,6 +103,14 @@ function PokemonInfo() {
                 </div>
               </>
             )}
+            {pm.tags.includes(GI) && (
+              <>
+                <SubTitleSlide title={GI} />
+                <div className={clsx('flex w-full justify-center md:h-[250px] md:w-full')}>
+                  <Icon.Game.PmGi pm={pm} />
+                </div>
+              </>
+            )}
           </>
         )}
 
@@ -111,7 +121,7 @@ function PokemonInfo() {
           </>
         )}
 
-        {tab === '招式清單' && <Moves pm={pm} />}
+        {tab === tabList[2] && <Moves pm={pm} />}
 
         <button onClick={() => navigate(-1)}>back</button>
       </div>
