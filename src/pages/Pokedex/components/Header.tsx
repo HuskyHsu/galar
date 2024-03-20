@@ -116,10 +116,11 @@ export function Header({
         <SubTitleSlide title="標籤(複選，交集)" />
         <Buttons
           list={[
-            { name: '傳說與幻獸', val: '傳說與幻獸' },
             { name: '超極巨化', val: '超極巨化' },
             { name: '劍版限定', val: '劍版限定' },
             { name: '盾版限定', val: '盾版限定' },
+            { name: '傳說與幻獸', val: '傳說與幻獸' },
+            { name: '究極異獸', val: '究極異獸' },
           ]}
           currVal={filter.tags}
           updateState={updateSetState('tags')}
