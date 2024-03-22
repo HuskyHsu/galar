@@ -35,3 +35,19 @@ input.search[type='search']::-webkit-search-results-decoration {
   z-index: 1;
   pointer-events: auto;
 }
+
+@keyframes switchingLeftRight {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -128px 0;
+  }
+}
+
+.switchingLeftRight {
+  width: 64px;
+  height: 64px;
+  background-size: 128px 64px;
+  animation: switchingLeftRight 2s steps(2) infinite;
+}

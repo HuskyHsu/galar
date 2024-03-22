@@ -1,4 +1,4 @@
-import { MoveEffective, PokemonBadge } from '@/newComponents/game';
+import { MoveEffective, PokemonBadge8Bit } from '@/newComponents/game';
 import { FullMove, LevelMap } from '@/types/Pokemon';
 import clsx from 'clsx';
 
@@ -25,7 +25,7 @@ function LevelingUps({ move, onlyEvolve }: Prop) {
               text = LevelMap[pm.level];
             }
 
-            return <PokemonBadge pm={pm} key={`${pm.link}-${pm.level}`} text={text} />;
+            return <PokemonBadge8Bit pm={pm} key={`${pm.link}-${pm.level}`} text={text} />;
           })}
       </div>
     </>
@@ -45,7 +45,7 @@ function Eggs({ move, onlyEvolve }: Prop) {
         {move.egg
           .filter((pm) => (onlyEvolve ? pm.child === undefined : true))
           .map((pm) => {
-            return <PokemonBadge pm={pm} key={pm.link} />;
+            return <PokemonBadge8Bit pm={pm} key={pm.link} />;
           })}
       </div>
     </>
@@ -68,7 +68,7 @@ function TMs({ move, onlyEvolve }: Prop) {
         {move.TM?.pm
           .filter((pm) => (onlyEvolve ? pm.child === undefined : true))
           .map((pm) => {
-            return <PokemonBadge pm={pm} key={pm.link} />;
+            return <PokemonBadge8Bit pm={pm} key={pm.link} />;
           })}
       </div>
     </>
@@ -155,7 +155,7 @@ function TRs({
           </form>
         </li>
         <li>
-          {shiftDays === 0 ? '今' : shiftDays}天後，「{shop}」瓦特商店販售
+          {shiftDays === 0 ? '今天' : `${shiftDays}天後`}，「{shop}」瓦特商店販售
         </li>
       </ul>
 
@@ -163,7 +163,7 @@ function TRs({
         {move.TR?.pm
           .filter((pm) => (onlyEvolve ? pm.child === undefined : true))
           .map((pm) => {
-            return <PokemonBadge pm={pm} key={pm.link} />;
+            return <PokemonBadge8Bit pm={pm} key={pm.link} />;
           })}
       </div>
     </>
@@ -183,7 +183,7 @@ function Tutors({ move, onlyEvolve }: Prop) {
         {move.tutors
           .filter((pm) => (onlyEvolve ? pm.child === undefined : true))
           .map((pm) => {
-            return <PokemonBadge pm={pm} key={pm.link} />;
+            return <PokemonBadge8Bit pm={pm} key={pm.link} />;
           })}
       </div>
     </>

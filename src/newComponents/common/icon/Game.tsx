@@ -39,6 +39,17 @@ function PmIcon({ pm, className = '' }: { pm: Pokemon | SubPokemon; className?: 
   );
 }
 
+function PmIcon8Bit({ pm, className = '' }: { pm: Pokemon | SubPokemon; className?: string }) {
+  return (
+    <div
+      className={clsx('pointer-events-none', 'switchingLeftRight', className)}
+      style={{
+        backgroundImage: `url('${process.env.PUBLIC_URL}/image/pmIcon8Bit/${pm.link}.png')`,
+      }}
+    />
+  );
+}
+
 function Pm({ pm, className = '' }: { pm: Pokemon | SubPokemon; className?: string }) {
   return (
     <img
@@ -91,4 +102,4 @@ function PmHome({
   );
 }
 
-export { MoveCategory, Pm, PmGi, PmHome, PmIcon, Type };
+export { MoveCategory, Pm, PmGi, PmHome, PmIcon, PmIcon8Bit, Type };
