@@ -16,7 +16,7 @@ function LevelingUps({ move, onlyEvolve }: Prop) {
     <>
       <hr className="my-3 h-px border-0 bg-gray-200" />
       <h6 className="py-2 text-lg font-bold">升等 / 進化 / 回憶招式</h6>
-      <div className="flex flex-wrap gap-2">
+      <div className="flex flex-wrap justify-center gap-2 md:justify-start">
         {move.levelingUps
           .filter((pm) => (onlyEvolve ? pm.child === undefined : true))
           .map((pm) => {
@@ -41,7 +41,7 @@ function Eggs({ move, onlyEvolve }: Prop) {
     <>
       <hr className="my-3 h-px border-0 bg-gray-200" />
       <h6 className="py-2 text-lg font-bold">遺傳招式(模仿香草)</h6>
-      <div className="flex flex-wrap gap-2">
+      <div className="flex flex-wrap justify-center gap-2 md:justify-start">
         {move.egg
           .filter((pm) => (onlyEvolve ? pm.child === undefined : true))
           .map((pm) => {
@@ -64,7 +64,7 @@ function TMs({ move, onlyEvolve }: Prop) {
       <ul className="text-gray-5000 max-w-md list-inside list-disc space-y-1 pb-2">
         <li>編號：#{move.TM.pid.toString().padStart(3, '0')}</li>
       </ul>
-      <div className="flex flex-wrap gap-2">
+      <div className="flex flex-wrap justify-center gap-2 md:justify-start">
         {move.TM?.pm
           .filter((pm) => (onlyEvolve ? pm.child === undefined : true))
           .map((pm) => {
@@ -159,7 +159,7 @@ function TRs({
         </li>
       </ul>
 
-      <div className="flex flex-wrap gap-2">
+      <div className="flex flex-wrap justify-center gap-2 md:justify-start">
         {move.TR?.pm
           .filter((pm) => (onlyEvolve ? pm.child === undefined : true))
           .map((pm) => {
@@ -179,7 +179,7 @@ function Tutors({ move, onlyEvolve }: Prop) {
     <>
       <hr className="my-3 h-px border-0 bg-gray-200" />
       <h6 className="py-2 text-lg font-bold">傳授招式</h6>
-      <div className="flex flex-wrap gap-2">
+      <div className="flex flex-wrap justify-center gap-2 md:justify-start">
         {move.tutors
           .filter((pm) => (onlyEvolve ? pm.child === undefined : true))
           .map((pm) => {
