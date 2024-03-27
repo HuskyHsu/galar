@@ -40,7 +40,7 @@ function Eggs({ move, onlyEvolve }: Prop) {
   return (
     <>
       <hr className="my-3 h-px border-0 bg-gray-200" />
-      <h6 className="py-2 text-lg font-bold">遺傳招式(模仿香草)</h6>
+      <h6 className="py-2 text-lg font-bold">遺傳招式(培育屋)</h6>
       <div className="flex flex-wrap justify-center gap-2 md:justify-start">
         {move.egg
           .filter((pm) => (onlyEvolve ? pm.child === undefined : true))
