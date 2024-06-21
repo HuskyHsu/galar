@@ -121,6 +121,7 @@ export function Header({
             { name: '盾版限定', val: '盾版限定' },
             { name: '傳說與幻獸', val: '傳說與幻獸' },
             { name: '究極異獸', val: '究極異獸' },
+            { name: '極巨大冒險', val: '極巨大冒險' },
           ]}
           currVal={filter.tags}
           updateState={updateSetState('tags')}
